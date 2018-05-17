@@ -1,0 +1,36 @@
+{
+  "name": "node-ebics-client",
+  "version": "0.0.3",
+  "description": "Node.js ISO 20022 Compliant EBICS Client",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eCollect/node-ebics-client"
+  },
+  "keywords": [
+    "EBICS",
+    "ISO20022",
+    "nodejs",
+    "api"
+  ],
+  "author": "eCollect Sofia Tech Team",
+  "license": "MIT",
+  "dependencies": {
+    "bn.js": "^4.11.8",
+    "handlebars": "^4.0.11",
+    "js2xmlparser": "^3.0.0",
+    "moment": "^2.22.1",
+    "node-rsa": "^0.4.2",
+    "xml-c14n": "0.0.6",
+    "xmldom": "^0.1.27",
+    "xpath": "0.0.27"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.12.0"
+	}
+}

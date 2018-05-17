@@ -1,0 +1,14 @@
+npm-debug.log
+node_modules
+.DS_Store
+*.local.json5
+yarn.lock
+/project.sublime-workspace
+/public/css/style.css.map
+/.idea
+/.vscode
+*.pid
+/coverage
+package-lock.json
+*.key
+*.html

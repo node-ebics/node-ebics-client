@@ -5,6 +5,7 @@ Pure node.js ( >=8 ) implementation of [EBICS](https://en.wikipedia.org/wiki/Ele
 
 The client is aimed to be 100% [ISO 20022](https://www.iso20022.org) compliant, and supports the complete initializations process ( INI, HIA, HPB orders ) and HTML letter generation.
 
+
 ## Supported Banks
 The client is currently tested and verified to work with the following banks:
 
@@ -15,7 +16,8 @@ The client is currently tested and verified to work with the following banks:
 
 ## Inspiration
 
-A lot of the concepts in this library are inspired from the [EPICS](https://github.com/railslove/epics) library.
+The basic concept of this library was inspired by the [EPICS](https://github.com/railslove/epics) library from the Railslove Team.
+
 
 ## Copyright
 

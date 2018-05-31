@@ -1,4 +1,4 @@
-# node-ebics-client v0.0.3
+# node-ebics-client v0.0.35
 ---
 
 Pure node.js ( >=8 ) implementation of [EBICS](https://en.wikipedia.org/wiki/Electronic_Banking_Internet_Communication_Standard) ( Electronic Banking Internet Communication ).

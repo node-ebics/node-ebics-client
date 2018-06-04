@@ -25,11 +25,9 @@
 		"moment": "^2.22.1",
 		"node-rsa": "^0.4.2",
 		"request": "^2.87.0",
-		"xml-c14n": "0.0.6",
 		"xml-crypto": "^0.10.1",
 		"xmldom": "^0.1.27",
-		"xpath": "0.0.27",
-		"xpath.js": "^1.1.0"
+		"xpath": "0.0.27"
 	},
 	"devDependencies": {
 		"eslint": "^4.19.1",

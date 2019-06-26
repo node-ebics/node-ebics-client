@@ -5,7 +5,7 @@ const H004Response = require('../lib/orders/H004/response');
 
 describe('H004 response parsing', () => {
 	it('parses bank keys', () => {
-		const response = H004Response('', {});
+		const response = H004Response('<xml/>', {});
 
 		const x002mod = 'ntbX6WFjAJP5RyH4ogDG/26wZGzEJXsTudyvcgXmUdk1AExCNqArXDiSlGXpVNq4BKddUMFUmVOyvkdNckPRV2mk3uHNCE5T3tFKQI3FlwHSJHvPSpb9gtHnsK03jByMigWjhTKvsjIdfLVay5m5Bctxq9+5JMHwlNk7MlVXBQcqaFiHFFS1lPfA3Wk1bptPeeGyYcP0+U798oQWnCABKwS8hmYcp5xBtozGoRj9L/NDE68pdP8o/wTKNwT4Jo5nQKYfDsgO4R+z9vVv37Htp6bWhK8Jw3tpkcd3JnkYWx+Ylg0XBpg8LfjFhY2Jc7FqLlx0Bn0Y3PRLI1apxgC85w==';
 		const e002mod = '4eOGrzcJHVzbEgZTmyPYUIq9kFoua8Ure1Mvyq6XlawFgCWskfu/xSKNLIMJ7H675wl/5y0Oy16P/b6pJEhWrzOw8omW46PBDTaXw9BDYBTuBblluz1yUnzpgfblP8gkRmxAo+QMIskmwdSzuZMiJcLNSzu/bkmLHK2RdrVYMAZLlB6QXTykdenPZtNmc2z4VU6TRmGljAwg2VUNF6iQoucbzDUuca+yUo3fiXZp69nfXv81X2ND+p1ir6zQpx7tbOdfauw0sEKI/Z/lC+E4fMrMlh/ZvOxSYUMA55J4liC3aUV3mTR3dPJHWu1aD1a7EfJnNw0eHLwlB+36qfgGuw==';

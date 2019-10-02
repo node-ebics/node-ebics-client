@@ -9,7 +9,7 @@ const client = new ebics.Client({
 	partnerId: 'PARTNER',
 	userId: 'USER',
 	hostId: 'HOST',
-	passphrase: 'test', // keys-test will be encrypted with this keys
+	passphrase: 'test', // keys-test will be encrypted with this passphrase
 	keyStorage: ebics.fsKeysStorage('./keys-test'),
 });
 

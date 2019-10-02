@@ -13,8 +13,7 @@ const client = new ebics.Client({
 	keyStorage: ebics.fsKeysStorage('./keys-test'),
 });
 
-// Client keys must be already generated and send by letter.
-// The bank should have enabled the user
+// The bank keys must have been already saved
 client.send(ebics.Orders.HTD)
 	.then((resp) => {
 		console.log('Respose for HTD order %j', resp);

@@ -1,4 +1,4 @@
-# node-ebics-client v0.0.7
+# node-ebics-client
 ---
 
 Pure node.js ( >=8 ) implementation of [EBICS](https://en.wikipedia.org/wiki/Electronic_Banking_Internet_Communication_Standard) ( Electronic Banking Internet Communication ).
@@ -21,4 +21,4 @@ The basic concept of this library was inspired by the [EPICS](https://github.com
 
 ## Copyright
 
-Copyright: eCollect AG, 2018.
+Copyright: eCollect AG, 2018-9.

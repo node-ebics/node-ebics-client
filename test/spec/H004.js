@@ -40,10 +40,58 @@ const client = new ebics.Client({
 
 const { Orders } = ebics;
 
+/*
+upload :
+const AZV = require('./AZV');
+const CD1 = require('./CD1');
+const CDB = require('./CDB');
+const CDD = require('./CDD');
+const CDS = require('./CDS');
+const CCT = require('./CCT');
+const CCS = require('./CCS');
+const XE3 = require('./XE3');
+const XCT = require('./XCT');
+*/
+const uploadBuilder = fn => fn('');
+const dateBuilder = fn => fn('2018-01-01', '2019-01-01');
+
+const fnOrders = {
+	// upload | document
+	AZV: uploadBuilder,
+	CD1: uploadBuilder,
+	CDB: uploadBuilder,
+	CDD: uploadBuilder,
+	CDS: uploadBuilder,
+	CCT: uploadBuilder,
+	CCS: uploadBuilder,
+	XE3: uploadBuilder,
+	XCT: uploadBuilder,
+
+	// download
+	STA: dateBuilder,
+	VMK: dateBuilder,
+	HAA: dateBuilder,
+	HTD: dateBuilder,
+	HPD: dateBuilder,
+	HKD: dateBuilder,
+	PTK: dateBuilder,
+	HAC: dateBuilder,
+	Z53: dateBuilder,
+};
+
+const getOrderObject = (name, order) => {
+	if (typeof order === 'object')
+		return order;
+	if (fnOrders[name])
+		return fnOrders[name](order);
+	return null;
+};
+
 describe('H004 order generation', () => {
 	// eslint-disable-next-line no-restricted-syntax
-	for (const order of Object.values(Orders)) {
-		if (typeof order === 'function')
+	for (const [name, orderDefinition] of Object.entries(Orders)) {
+		const order = getOrderObject(name, orderDefinition);
+		if (!order)
 			continue;
 
 		const type = order.orderDetails.OrderType;

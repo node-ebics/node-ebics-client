@@ -1,6 +1,6 @@
 'use strict';
 
-/* eslint-disable no-loop-func */
+/* eslint-env node, mocha */
 
 const { assert } = require('chai');
 
@@ -35,7 +35,7 @@ const client = new ebics.Client({
 	userId: 'CRS04381',
 	hostId: 'CRSISOTB',
 	passphrase: 'test',
-	keyStorage: ebics.fsKeysStorage(path.resolve(__dirname, './TEST_KEYS.key')),
+	keyStorage: ebics.fsKeysStorage(path.resolve(__dirname, '../support/TEST_KEYS.key')),
 });
 
 const { Orders } = ebics;

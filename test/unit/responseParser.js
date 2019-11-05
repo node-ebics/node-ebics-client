@@ -1,15 +1,16 @@
 'use strict';
 
+/* eslint-env node, mocha */
+
 const { assert } = require('chai');
-const H004Response = require('../lib/orders/H004/response');
+const H004Response = require('../../lib/orders/H004/response');
 
 describe('H004 response parsing', () => {
-	it('parses bank keys exp', () => {
+	it('parses bank keys', () => {
 		const response = H004Response('<xml/>', {});
 
-		const x002mod = 'AJ2/0OoIZydb9sgKbiwqDcwA0NtcUMIYi6GK7PqoRszu1uytGnxJjQhGt62kMslWvLgebUSwdq/T3YyGsa3KQeIGaUUn9iqyu3BoNOMdo2DLN4NdGMY1WR/HbYRKR3JHyURhTBKw27KScRRdKGl6jY+VcXcTKJL8PjXMQH5cD6Gz'; // 'ALr6oSdqbbpRxlJmKtwTjjaCA1zlA61Vd7NfPML1NxY/U3Dt8galrieRjBM0SDn4vD2+AJCQY4zzkdE2m8u/p+3KGtmZtGaaxs11TNRm9GhtwQGw2hW73RduTSwLZJrSilv/GH18vPar8uvlBAXTmtVEy2kfvT3+t1mvqrut/LnUg3t63nx3WVdWylEdVDmf9Ylp+W+2quLyE0TzTVl5OXhvB3tpVs2B4OfsmOHJAaKIdSuXDMJebPiM9uIlraiJVeRMjkW3Xxmrazc7+kuy8RZ4BBgi+Xve6lNaQHGqxPV5q5SeXR5fS0D2sPeewJWbjhaVRBObIV2ZEoEWKx79pnE=';
-		const e002mod = 'AOzWaiT7aGESXcI3dqLY3RRD36inlZTGmNNprKd/t9uHfoMeLwZHeMwtjCRWjsuZEyBupkNSFWb3vBlxDyhcyTgpbbbcHsDGqF2zCJaK85xUphoH9mKHxbnA8ZlXzmtHwDmwVSns0FAslIqD+Xr+WycQpeCBEK12D8Ii032YS814ZUKHJ1MkS65A5PE0lcvMTyIE7ruG1kFz85F4nX8eWq77mDEiBONkA5RSUb5duGnRohdNYBgO8K6Wn18aDdISGDyPyXHNvC70v8tfWbF9VGE3rXVGcgjpezZZxC8d47vL0x6lOeslgl7s8N456ntAa+oGHRurt5mEhDz1DZg+EJc=';
-		const exponent = 'AQAB'; // 'AQAAAA8=';
+		const x002mod = 'ntbX6WFjAJP5RyH4ogDG/26wZGzEJXsTudyvcgXmUdk1AExCNqArXDiSlGXpVNq4BKddUMFUmVOyvkdNckPRV2mk3uHNCE5T3tFKQI3FlwHSJHvPSpb9gtHnsK03jByMigWjhTKvsjIdfLVay5m5Bctxq9+5JMHwlNk7MlVXBQcqaFiHFFS1lPfA3Wk1bptPeeGyYcP0+U798oQWnCABKwS8hmYcp5xBtozGoRj9L/NDE68pdP8o/wTKNwT4Jo5nQKYfDsgO4R+z9vVv37Htp6bWhK8Jw3tpkcd3JnkYWx+Ylg0XBpg8LfjFhY2Jc7FqLlx0Bn0Y3PRLI1apxgC85w==';
+		const e002mod = '4eOGrzcJHVzbEgZTmyPYUIq9kFoua8Ure1Mvyq6XlawFgCWskfu/xSKNLIMJ7H675wl/5y0Oy16P/b6pJEhWrzOw8omW46PBDTaXw9BDYBTuBblluz1yUnzpgfblP8gkRmxAo+QMIskmwdSzuZMiJcLNSzu/bkmLHK2RdrVYMAZLlB6QXTykdenPZtNmc2z4VU6TRmGljAwg2VUNF6iQoucbzDUuca+yUo3fiXZp69nfXv81X2ND+p1ir6zQpx7tbOdfauw0sEKI/Z/lC+E4fMrMlh/ZvOxSYUMA55J4liC3aUV3mTR3dPJHWu1aD1a7EfJnNw0eHLwlB+36qfgGuw==';
 
 		response.orderData = () => `<?xml version="1.0" encoding="UTF-8"?>
 			<HPBResponseOrderData xmlns="urn:org:ebics:H004" xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
@@ -17,7 +18,7 @@ describe('H004 response parsing', () => {
 				<PubKeyValue>
 				  <ds:RSAKeyValue>
 					<ds:Modulus>${x002mod}</ds:Modulus>
-					<ds:Exponent>${exponent}</ds:Exponent>
+					<ds:Exponent>AQAB</ds:Exponent>
 				  </ds:RSAKeyValue>
 				  <TimeStamp>2015-02-25T08:01:13.061Z</TimeStamp>
 				</PubKeyValue>
@@ -27,7 +28,7 @@ describe('H004 response parsing', () => {
 				<PubKeyValue>
 				  <ds:RSAKeyValue>
 					<ds:Modulus>${e002mod}</ds:Modulus>
-					<ds:Exponent>${exponent}</ds:Exponent>
+					<ds:Exponent>AQAB</ds:Exponent>
 				  </ds:RSAKeyValue>
 				  <TimeStamp>2015-02-25T08:01:12.344Z</TimeStamp>
 				</PubKeyValue>

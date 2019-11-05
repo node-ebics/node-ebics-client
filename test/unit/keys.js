@@ -1,9 +1,11 @@
 'use strict';
 
+/* eslint-env node, mocha */
+
 const { assert } = require('chai');
-const fixtures = require('./fixtures/keys');
+const fixtures = require('../fixtures/keys');
 // const Key = require('../lib/keymanagers/keyRSA');
-const Key = require('../lib/keymanagers/Key');
+const Key = require('../../lib/keymanagers/Key');
 
 const stripWhitespace = str => str.replace(/\s+/g, '');
 

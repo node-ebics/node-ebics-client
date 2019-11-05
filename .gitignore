@@ -10,5 +10,4 @@ yarn.lock
 *.pid
 /coverage
 package-lock.json
-*.key
 *.html

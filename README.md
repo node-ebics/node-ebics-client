@@ -1,5 +1,4 @@
 # node-ebics-client
----
 <p align="center">
 <a href="https://travis-ci.org/eCollect/node-ebics-client" title="Build Status"><img src="https://travis-ci.org/eCollect/node-ebics-client.svg?branch=master" alt="Build Status" /></a>
 </p>

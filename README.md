@@ -1,5 +1,8 @@
 # node-ebics-client
 ---
+<p align="center">
+<a href="https://travis-ci.org/eCollect/node-ebics-client" title="Build Status"><img src="https://travis-ci.org/eCollect/node-ebics-client.svg?branch=master" alt="Build Status" /></a>
+</p>
 
 Pure node.js ( >=8 ) implementation of [EBICS](https://en.wikipedia.org/wiki/Electronic_Banking_Internet_Communication_Standard) ( Electronic Banking Internet Communication ).
 

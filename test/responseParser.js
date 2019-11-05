@@ -1,5 +1,7 @@
 'use strict';
 
+/* eslint-env node, mocha */
+
 const { assert } = require('chai');
 const H004Response = require('../lib/orders/H004/response');
 
@@ -23,7 +25,7 @@ describe('H004 response parsing', () => {
 				<AuthenticationVersion>X002</AuthenticationVersion>
 			  </AuthenticationPubKeyInfo>
 			  <EncryptionPubKeyInfo>
-				<PubKeyValue>  
+				<PubKeyValue>
 				  <ds:RSAKeyValue>
 					<ds:Modulus>${e002mod}</ds:Modulus>
 					<ds:Exponent>AQAB</ds:Exponent>

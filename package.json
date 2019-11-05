@@ -4,7 +4,8 @@
 	"description": "Node.js ISO 20022 Compliant EBICS Client",
 	"main": "index.js",
 	"scripts": {
-		"test": "mocha"
+		"lint": "eslint .",
+		"test": "mocha test/*/**.js"
 	},
 	"repository": {
 		"type": "git",
@@ -42,9 +43,10 @@
 	},
 	"devDependencies": {
 		"chai": "^4.2.0",
-		"eslint": "^4.19.1",
-		"eslint-config-airbnb-base": "^12.1.0",
-		"eslint-plugin-import": "^2.12.0",
-		"mocha": "^6.1.4"
+		"eslint": "^6.6.0",
+		"eslint-config-ecollect-base": "^0.1.2",
+		"eslint-plugin-import": "^2.18.2",
+		"libxmljs": "^0.19.7",
+		"mocha": "^6.2.2"
 	}
 }

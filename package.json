@@ -28,7 +28,7 @@
 			"url": "https://github.com/yagop"
 		}
 	],
-	"license": "MIT",
+	"license": "GPLv3",
 	"dependencies": {
 		"bn.js": "^5.0.0",
 		"handlebars": "^4.4.3",

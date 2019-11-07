@@ -5,7 +5,8 @@
 	"main": "index.js",
 	"scripts": {
 		"lint": "eslint .",
-		"test": "nyc mocha test/**/*.js"
+		"test": "nyc mocha test/**/*.js",
+		"version": "auto-changelog -p && git add CHANGELOG.md",
 	},
 	"repository": {
 		"type": "git",
@@ -47,7 +48,6 @@
 		"node-forge": "^0.9.1",
 		"request": "^2.88.0",
 		"uuid": "^3.3.3",
-		"version": "auto-changelog -p && git add CHANGELOG.md",
 		"xml-crypto": "^1.4.0",
 		"xmldom": "^0.1.27",
 		"xpath": "0.0.27"

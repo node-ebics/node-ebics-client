@@ -30,7 +30,6 @@
 	],
 	"license": "GPLv3",
 	"dependencies": {
-		"bn.js": "^5.0.0",
 		"handlebars": "^4.4.3",
 		"js2xmlparser": "^4.0.0",
 		"node-forge": "^0.9.1",

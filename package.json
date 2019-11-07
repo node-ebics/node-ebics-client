@@ -20,6 +20,16 @@
 	"author": "eCollect Sofia Tech Team",
 	"contributors": [
 		{
+			"name": "Dimitar Nanov",
+			"url": "https://nanov.io",
+			"email": "dimitar@nanov.io"
+		},
+		{
+			"name": "Vladislav Hristov",
+			"url": "https://github.com/vladhristov",
+			"email": "vlad.s.ch@gmail.com",
+		},
+		{
 			"name": "Vasyl Stashuk",
 			"url": "https://github.com/vasyas"
 		},

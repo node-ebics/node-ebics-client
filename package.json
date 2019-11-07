@@ -5,7 +5,8 @@
 	"main": "index.js",
 	"scripts": {
 		"lint": "eslint .",
-		"test": "nyc mocha test/**/*.js"
+		"test": "nyc mocha test/**/*.js",
+		"version": "auto-changelog -p && git add CHANGELOG.md",
 	},
 	"repository": {
 		"type": "git",
@@ -41,6 +42,7 @@
 	],
 	"license": "GPL-3.0-only",
 	"dependencies": {
+		"auto-changelog": "^1.16.2",
 		"handlebars": "^4.4.3",
 		"js2xmlparser": "^4.0.0",
 		"node-forge": "^0.9.1",

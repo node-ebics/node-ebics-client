@@ -1,0 +1,25 @@
+### Changelog
+
+{{#each releases}}
+  {{#if href}}
+    ###{{#unless major}}#{{/unless}} [{{title}}]({{href}})
+  {{else}}
+    #### {{title}}
+  {{/if}}
+
+  {{#if tag}}
+    > {{niceDate}}
+  {{/if}}
+
+  {{#if summary}}
+    {{summary}}
+  {{/if}}
+
+  {{#each merges}}
+    - {{message}}{{#if href}} [`#{{id}}`]({{href}}){{/if}}
+  {{/each}}
+  {{#commit-list commits heading='' message='' exclude='wip: '}}
+    - {{#if breaking}}**Breaking change:** {{/if}}{{subject}}{{#if href}} [`{{shorthash}}`]({{href}}){{/if}}
+  {{/commit-list}}
+
+{{/each}}

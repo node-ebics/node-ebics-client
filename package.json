@@ -6,7 +6,7 @@
 	"scripts": {
 		"lint": "eslint .",
 		"test": "nyc mocha test/**/*.js",
-		"version": "auto-changelog -p && git add CHANGELOG.md",
+		"version": "auto-changelog -p && git add CHANGELOG.md"
 	},
 	"repository": {
 		"type": "git",

@@ -29,7 +29,6 @@ describe('BigNumber', () => {
 				}));
 				it('toString with radix 10', () => assert.equal(instance.toString(), '11'));
 				it('toString with radix 16', () => assert.equal(instance.toString(16), '0b'));
-				it('toBuffer', () => assert.equal(instance.toBuffer().toString('hex'), '0b'));
 				it('toBEBuffer without length', () => assert.equal(instance.toBEBuffer().toString('hex'), '0b'));
 				it('toBEBuffer with length', () => assert.equal(instance.toBEBuffer(4).toString('hex'), '0000000b'));
 			});

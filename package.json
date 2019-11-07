@@ -15,7 +15,8 @@
 		"EBICS",
 		"ISO20022",
 		"nodejs",
-		"api"
+		"api",
+		"banking"
 	],
 	"author": "eCollect Sofia Tech Team",
 	"contributors": [

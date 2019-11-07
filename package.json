@@ -3,10 +3,14 @@
 	"version": "0.1.2",
 	"description": "Node.js ISO 20022 Compliant EBICS Client",
 	"main": "index.js",
+	"files": [
+		"lib/**/*",
+		"templates/**/*"
+	],
 	"scripts": {
 		"lint": "eslint .",
 		"test": "nyc mocha test/**/*.js",
-		"version": "auto-changelog -p && git add CHANGELOG.md"
+		"version": "auto-changelog -p -t changelog-template.hbs && git add CHANGELOG.md"
 	},
 	"repository": {
 		"type": "git",

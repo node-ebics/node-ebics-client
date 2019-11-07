@@ -1,13 +1,19 @@
-npm-debug.log
-node_modules
+# mac shit
 .DS_Store
-*.local.json5
-yarn.lock
-/project.sublime-workspace
-/public/css/style.css.map
-/.idea
+
+# nyc test coverage
+.nyc_output
+
+# Dependency directories
+node_modules/
+
+# Optional npm cache directory
+.npm
+npm-debug.log
+
+# Optional eslint cache
+.eslintcache
+
+# vscode
 /.vscode
 *.pid
-/coverage
-package-lock.json
-*.html

@@ -1,7 +1,7 @@
 <p align="center">
-	<img src="assets/logo.svg" width="300px" height="auto"/>
-	<h1>node-ebics-client</h1>
+	<img src="assets/logo.png" width="300px" height="auto"/>
 </p>
+<h1 align="center">node-ebics-client</h1>
 
 <p align="center">
 <a href="https://travis-ci.org/eCollect/node-ebics-client" title="Build Status"><img src="https://travis-ci.org/eCollect/node-ebics-client.svg?branch=master" alt="Build Status" /></a>

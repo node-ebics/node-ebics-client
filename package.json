@@ -28,7 +28,7 @@
 			"url": "https://github.com/yagop"
 		}
 	],
-	"license": "GPLv3",
+	"license": "GPL-3.0-only",
 	"dependencies": {
 		"handlebars": "^4.4.3",
 		"js2xmlparser": "^4.0.0",

@@ -1,4 +1,8 @@
-# node-ebics-client
+<p align="center">
+	<img src="assets/logo.svg" width="300px" height="auto"/>
+	<h1>node-ebics-client</h1>
+</p>
+
 <p align="center">
 <a href="https://travis-ci.org/eCollect/node-ebics-client" title="Build Status"><img src="https://travis-ci.org/eCollect/node-ebics-client.svg?branch=master" alt="Build Status" /></a>
 <a href="https://www.npmjs.com/package/ebics-client" title="Build Status">

@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta charset="UTF-8" />
+	<title>EBICS ini</title>
+</head>
+
+<body>
+	<div>
+		<h2>EBICS-Initialization letter (INI)</h2>
+		<table>
+			<tr>
+				<td>Date</td>
+				<td>{{ today }}</td>
+			</tr>
+			<tr>
+				<td>Time</td>
+				<td>{{ now }}</td>
+			</tr>
+			<tr>
+				<td>Recipient</td>
+				<td>{{ bankName }}</td>
+			</tr>
+			<tr>
+				<td>User ID</td>
+				<td>{{ userId }}</td>
+			</tr>
+			<tr>
+				<td>Customer ID</td>
+				<td>{{ partnerId }}</td>
+			</tr>
+		</table>
+		<p>Public authentication key (A006)</p>
+		<p>Exponent ({{ keyExponentBits A006 }} Bit):</p>
+		<p>
+			<code>{{ keyExponent A006 }}</code>
+		</p>
+		<p>Modulus ({{ keyModulusBits A006 }} Bit):</p>
+		<p>
+			<code>{{ keyModulus A006 }}</code>
+		</p>
+		<p>SHA-256 Hash:</p>
+		<p>
+			<code>{{ sha256 A006 }}</code>
+		</p>
+		<p>I hereby confirm the above public key for my electronic signature.</p>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<table>
+			<tr>
+				<td>_________________________</td>
+				<td>_________________________</td>
+				<td>_________________________</td>
+			</tr>
+			<tr>
+				<td>City/Date</td>
+				<td>Name/Company</td>
+				<td>Signature</td>
+			</tr>
+		</table>
+	</div>
+	<div style="page-break-after:always"></div>
+	<h2>EBICS-Initialization letter (HIA) - Page 1/2</h2>
+	<table>
+		<tr>
+			<td>Date</td>
+			<td>{{ today }}</td>
+		</tr>
+		<tr>
+			<td>Time</td>
+			<td>{{ now }}</td>
+		</tr>
+		<tr>
+			<td>Recipient</td>
+			<td>{{ bankName }}</td>
+		</tr>
+		<tr>
+			<td>User ID</td>
+			<td>{{ userId }}</td>
+		</tr>
+		<tr>
+			<td>Customer ID</td>
+			<td>{{ partnerId }}</td>
+		</tr>
+	</table>
+	<div>
+		<p>Public Identification Key (X002)</p>
+		<p>Exponent ({{ keyExponentBits X002 }} Bit):</p>
+		<p>
+			<code>{{ keyExponent X002 }}</code>
+		</p>
+		<p>Modulus ({{ keyModulusBits X002 }} Bit):</p>
+		<p>
+			<code>{{ keyModulus X002 }}</code>
+		</p>
+		<p>SHA-256 Hash:</p>
+		<p>
+			<code>{{ sha256 X002 }}</code>
+		</p>
+		<p> Continuation on Page 2 ...</p>
+		<div style="page-break-after:always"></div>
+		<h2>EBICS-Initialization letter (HIA) - Page 2/2</h2>
+		<table>
+			<tr>
+				<td>Date</td>
+				<td>{{ today }}</td>
+			</tr>
+			<tr>
+				<td>Time</td>
+				<td>{{ now }}</td>
+			</tr>
+			<tr>
+				<td>Recipient</td>
+				<td>{{ bankName }}</td>
+			</tr>
+			<tr>
+				<td>User ID</td>
+				<td>{{ userId }}</td>
+			</tr>
+			<tr>
+				<td>Customer ID</td>
+				<td>{{ partnerId }}</td>
+			</tr>
+		</table>
+	</div>
+	<div>
+		<p>Public Encryption Key (E002)</p>
+		<p>Exponent ({{ keyExponentBits E002 }} Bit):</p>
+		<p>
+			<code>{{ keyExponent E002 }}</code>
+		</p>
+		<p>Modulus ({{ keyModulusBits E002 }} Bit):</p>
+		<p>
+			<code>{{ keyModulus E002 }}</code>
+		</p>
+		<p>SHA-256 Hash:</p>
+		<p>
+			<code>{{ sha256 E002 }}</code>
+		</p>
+		<p>I hereby confirm the above public keys for my EBICS access.</p>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<table>
+			<tr>
+				<td>_________________________</td>
+				<td>_________________________</td>
+				<td>_________________________</td>
+			</tr>
+			<tr>
+				<td>City/Date</td>
+				<td>Name/Company</td>
+				<td>Signature</td>
+			</tr>
+		</table>
+	</div>
+</body>
+
+</html>

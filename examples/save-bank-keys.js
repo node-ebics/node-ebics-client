@@ -17,7 +17,7 @@ const client = new ebics.Client({
 // The bank should have enabled the user
 client.send(ebics.Orders.HPB)
 	.then((resp) => {
-		console.log('Respose for HPB order %j', resp);
+		console.log('Response for HPB order %j', resp);
 		if (resp.technicalCode !== '000000')
 			throw new Error('Something went wrong');
 

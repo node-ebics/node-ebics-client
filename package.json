@@ -42,6 +42,10 @@
 		{
 			"name": "Yago",
 			"url": "https://github.com/yagop"
+		},
+		{
+			"name": "Herman van Hazendonk",
+			"email": "github.com@herrie.org"
 		}
 	],
 	"license": "GPL-3.0-only",

@@ -16,7 +16,7 @@ const client = new ebics.Client({
 // The bank keys must have been already saved
 client.send(ebics.Orders.HTD)
 	.then((resp) => {
-		console.log('Respose for HTD order %j', resp);
+		console.log('Response for HTD order %j', resp);
 		if (resp.technicalCode !== '000000')
 			throw new Error('Something went wrong');
 

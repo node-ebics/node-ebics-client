@@ -16,11 +16,11 @@ const client = new ebics.Client({
 // New keys will be generated and saved in ./keys-test
 client.send(ebics.Orders.INI)
 	.then((resp) => {
-		console.log('Respose for INI order %j', resp);
+		console.log('Response for INI order %j', resp);
 		return client.send(ebics.Orders.HIA);
 	})
 	.then((resp) => {
-		console.log('Reponse for HIA order %j', resp);
+		console.log('Response for HIA order %j', resp);
 		if (resp.technicalCode !== '000000')
 			throw new Error('Something might went wrong');
 

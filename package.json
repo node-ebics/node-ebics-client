@@ -52,7 +52,7 @@
 	"license": "GPL-3.0-only",
 	"dependencies": {
 		"auto-changelog": "^1.16.2",
-		"handlebars": "^4.4.3",
+		"handlebars": "^4.5.3",
 		"js2xmlparser": "^4.0.0",
 		"node-forge": "^0.9.1",
 		"request": "^2.88.0",
@@ -63,6 +63,7 @@
 	},
 	"devDependencies": {
 		"chai": "^4.2.0",
+		"coveralls": "^3.0.7",
 		"eslint": "^6.6.0",
 		"eslint-config-ecollect-base": "^0.1.2",
 		"eslint-plugin-import": "^2.18.2",

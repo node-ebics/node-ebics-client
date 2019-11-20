@@ -10,6 +10,7 @@
 	"scripts": {
 		"lint": "eslint .",
 		"test": "nyc mocha test/**/*.js",
+		"coverage": "nyc report --reporter=lcov",
 		"version": "auto-changelog -p -t changelog-template.hbs && git add CHANGELOG.md"
 	},
 	"repository": {

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ebicsKeyManagementResponse xmlns="urn:org:ebics:H004" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Revision="1" Version="H004" xsi:schemaLocation="urn:org:ebics:H004 ebics_keymgmt_response_H004.xsd">
+  <header authenticate="true">
+    <static/>
+    <mutable>
+      <ReturnCode>000000</ReturnCode>
+      <ReportText>[EBICS_OK] OK</ReportText>
+    </mutable>
+  </header>
+  <body>
+    <DataTransfer>
+      <DataEncryptionInfo authenticate="true">
+        <EncryptionPubKeyDigest Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" Version="E002">nuZyAjQoIvH4MwnrCWB82TC/vcNqigpqPtMXwO1Xk9U=</EncryptionPubKeyDigest>
+        <TransactionKey>QgfTQqhocARTcpcgySGxn5a+uBuFsHCX0oBINQQIfsgMRR+wEZ3zlXQMUm5GUwwOci2wjkRHJ3PoO4Yd0KzDNWiXFuX/9n00bpnNN5MsTCRgDqJRzZrA1jDxWRBVY/sv3l1gS/ERwyWqub456VZ7DYlXlRA8yp5lormoxftpIt6/Cf0ShmhS8qlUkLYSn/8ugQRl1KRTID5ZSXPjDYAIVZ0izVxblaBYXgs6RH9VvP4uKSn4CFYiFp+alo6EcxFNgMVUnfzaEbsPH/aX9Y3tbdWhATBZSxTT8iMoi2ARhz9VB711aavB8vgzcD6jH3ZtIm+sCb3UC3A/KehEn9GjIA==</TransactionKey>
+      </DataEncryptionInfo>
+      <OrderData>xlQf5zxlUo4LwjkoDsh926OISQwn6PhpxF3CkZI34EO84tfK25zLbqriXiqwDycl2YjYrQxbj8B4k1auNe86a+JigQOoBBCL8gvsoxO+NlziPNzf8sP99dQSp436q7KOhVm4gz2ZZT3D3O5FSqpOKsQ0fJku7D76beoxqxUT+hD0UxgsGLsbGgNLzHPalnFJctuaZtqQmo24Uk6hOwLrFJoQwUbPEffU5GGARWrZVxGQr5Zw4zrtLlZzP1RXk9JZFnhx00KvKiaoxAQXxXUC0BeDM97tIMEiaRNbO3ne+mHtK8vXzc305X5yR0B6ocwbFAmzGQ/e6Fyy6XPIGsbXoLjJGod6ayIU1SJGx/JRyOU4cLkjJZLUQMyCdJ6bA5uYf1AePUDvUA3tAOd6W0cC7DPAlwcrWhSZkPLIawequyjO39LTkEcmINEigd4i3sCrG4e1k303gyIKUg79kApl46onW2vruN3DwswunI10JGXxqex7ccvd2JvD6Pc8cAH1RMg8FIucYd//Joh1XK+QkRdIZMWKg4/lkoWmgVN7ssMmrtsKE2pNFAsIRfgxd8bB64sHZ3XKSyZKTk4LnWdJHZopP/xTs9a+/G3Kd/sIsy4W4sIKZCWU8NL11YOaqfwxY/rYNMaQzhAmawFfWvt74iisFG81Wv+Ijja/dPFmbk3Mup2Dfnlfu26MDblC8+aiaPHypmPuzREqGjW/9d2vtLQz0IXX3X6H4pFXneSjKlwXlDk1WGuiOvXH4gmXEpfWTX9rq+rUyskwwL8ssW5eeeyJ5W2LhVKQllOi/bvrAL5kyrfDMxvOuFIBLxBf//xE</OrderData>
+    </DataTransfer>
+    <ReturnCode authenticate="true">000000</ReturnCode>
+    <TimestampBankParameter authenticate="true">2016-08-10T16:16:17.512Z</TimestampBankParameter>
+  </body>
+</ebicsKeyManagementResponse>

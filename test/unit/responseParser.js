@@ -108,5 +108,4 @@ describe('H004 response parsing', () => {
 		const xmlString = response.toXML().replace('\\n', '\n');
 		assert.deepEqual(xmlString, readFileSync(join(__dirname, '../fixtures/HPB_response.xml'), { encoding: 'utf8' }));
 	});
-
 });

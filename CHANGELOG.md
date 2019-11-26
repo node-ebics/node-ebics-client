@@ -1,16 +1,28 @@
 ### Changelog
 
+#### [v0.1.3](https://github.com/eCollect/node-ebics-client/compare/v0.1.2...v0.1.3)
+
+> 26 November 2019
+
+- * Add DKI, C52, C53 order types. [`#26`](https://github.com/eCollect/node-ebics-client/pull/26)
+- feat: Add English template & flexible generation [`#24`](https://github.com/eCollect/node-ebics-client/pull/24)
+- chore: Various fixes for spelling [`#23`](https://github.com/eCollect/node-ebics-client/pull/23)
+
+- test: add additional tests [`6d73ef7`](https://github.com/eCollect/node-ebics-client/commit/6d73ef77d4454ff966b733f995b64d6dfd7c18b2)
+- test: add more tests [`67d74cf`](https://github.com/eCollect/node-ebics-client/commit/67d74cfa0060d97c948bb747885eaba26294663b)
+- Bank Letter: Add English template & flexible generation [`95403cb`](https://github.com/eCollect/node-ebics-client/commit/95403cbe6f90c81a696bb589533d713a4ba04873)
+
 #### [v0.1.2](https://github.com/eCollect/node-ebics-client/compare/v0.1.1...v0.1.2)
 
 > 7 November 2019
 
-- chore: add changelog configuration [`#22`](https://github.com/eCollect/node-ebics-client/pull/22)
+- chore: add changelog configoration [`#22`](https://github.com/eCollect/node-ebics-client/pull/22)
 - Closes #17 and #13  [`#21`](https://github.com/eCollect/node-ebics-client/pull/21)
 - Drop moment dependency [`#20`](https://github.com/eCollect/node-ebics-client/pull/20)
 
 - feat: add nyc and cleanup .gitignore [`3e95478`](https://github.com/eCollect/node-ebics-client/commit/3e95478b3be719c86f32c7df10c42e46b7518669)
 - feat: drop bn.js [`eea0a49`](https://github.com/eCollect/node-ebics-client/commit/eea0a49130e30c123b110120c69d7b7c19fd12ba)
-- add changelog configuration [`1f34dcb`](https://github.com/eCollect/node-ebics-client/commit/1f34dcbfb6e0febbb93d5356fa36ac57d697a990)
+- add changelog configoration [`1f34dcb`](https://github.com/eCollect/node-ebics-client/commit/1f34dcbfb6e0febbb93d5356fa36ac57d697a990)
 
 #### [v0.1.1](https://github.com/eCollect/node-ebics-client/compare/v0.1.0...v0.1.1)
 
@@ -59,7 +71,7 @@
 > 2 August 2019
 
 - * Add Z53 order type [`#7`](https://github.com/eCollect/node-ebics-client/pull/7)
-- remove eCollect from constant and minor verbose error handling [`#2`](https://github.com/eCollect/node-ebics-client/pull/2)
+- remove eCollect from constant and minor verbose error handeling [`#2`](https://github.com/eCollect/node-ebics-client/pull/2)
 - add iso pain format XCT order type [`#1`](https://github.com/eCollect/node-ebics-client/pull/1)
 
 - add new order type XZ53 and removed repeated dateRange to consts [`5ff3147`](https://github.com/eCollect/node-ebics-client/commit/5ff314712443c4c8465f46292b010cfedfed8c2e)
@@ -70,10 +82,10 @@
 
 > 24 July 2019
 
-- remove eCollect from constant and minor verbose error handling [`#4`](https://github.com/eCollect/node-ebics-client/pull/4)
+- remove eCollect from constant and minor verbose error handaling [`#4`](https://github.com/eCollect/node-ebics-client/pull/4)
 - add iso pain format XCT order type [`#5`](https://github.com/eCollect/node-ebics-client/pull/5)
 
-- remove eCollect from constant and minor verbose error handling [`cb2062a`](https://github.com/eCollect/node-ebics-client/commit/cb2062ae2fbd8e8881de26561efddad1f272e065)
+- remove eCollect from constant and minor verbose error handeling [`cb2062a`](https://github.com/eCollect/node-ebics-client/commit/cb2062ae2fbd8e8881de26561efddad1f272e065)
 - bump [`c9f52d3`](https://github.com/eCollect/node-ebics-client/commit/c9f52d3bd99b9f8761652365b217d9580fa34632)
 
 #### [v0.0.5](https://github.com/eCollect/node-ebics-client/compare/v0.0.4...v0.0.5)

@@ -77,6 +77,9 @@ const fnOrders = {
 	PTK: dateBuilder,
 	HAC: dateBuilder,
 	Z53: dateBuilder,
+	DKI: dateBuilder,
+	C53: dateBuilder,
+	C52: dateBuilder,
 };
 
 const getOrderObject = (name, order) => {

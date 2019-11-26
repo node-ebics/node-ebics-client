@@ -5,11 +5,6 @@
 > 26 November 2019
 
 - * Add DKI, C52, C53 order types. [`#26`](https://github.com/eCollect/node-ebics-client/pull/26)
-- feat: Add English template & flexible generation [`#24`](https://github.com/eCollect/node-ebics-client/pull/24)
-- chore: Various fixes for spelling [`#23`](https://github.com/eCollect/node-ebics-client/pull/23)
-
-- test: add additional tests [`6d73ef7`](https://github.com/eCollect/node-ebics-client/commit/6d73ef77d4454ff966b733f995b64d6dfd7c18b2)
-- test: add more tests [`67d74cf`](https://github.com/eCollect/node-ebics-client/commit/67d74cfa0060d97c948bb747885eaba26294663b)
 - Bank Letter: Add English template & flexible generation [`95403cb`](https://github.com/eCollect/node-ebics-client/commit/95403cbe6f90c81a696bb589533d713a4ba04873)
 
 #### [v0.1.2](https://github.com/eCollect/node-ebics-client/compare/v0.1.1...v0.1.2)

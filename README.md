@@ -27,6 +27,7 @@ The client is currently tested and verified to work with the following banks:
 * [Zürcher Kantonalbank](https://www.zkb.ch/en/lg/ew.html)
 * [Raiffeisen Schweiz](https://www.raiffeisen.ch/rch/de.html)
 * [BW Bank](https://www.bw-bank.de/de/home.html)
+* [Bank GPB International S.A.](https://gazprombank.lu/e-banking)
 
 
 ## Inspiration

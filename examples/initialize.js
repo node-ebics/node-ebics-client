@@ -3,15 +3,9 @@
 'use strict';
 
 const ebics = require('../index');
+const configjs = require('./config.js');
 
-const client = new ebics.Client({
-	url: 'https://ebics.server',
-	partnerId: 'PARTNER',
-	userId: 'USER',
-	hostId: 'HOST',
-	passphrase: 'test', // keys-test will be encrypted with this passphrase
-	keyStorage: ebics.fsKeysStorage('./keys-test'),
-});
+const client = gClient;
 
 // New keys will be generated and saved in ./keys-test
 client.send(ebics.Orders.INI)

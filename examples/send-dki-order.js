@@ -3,15 +3,9 @@
 'use strict';
 
 const ebics = require('../index');
+const configjs = require('./config.js');
 
-const client = new ebics.Client({
-	url: 'https://ebics.server',
-	partnerId: '',
-	userId: '',
-	hostId: '',
-	passphrase: 'test', // keys-test will be decrypted with this passphrase
-	keyStorage: ebics.fsKeysStorage('./keys-test'),
-});
+const client = gClient;
 
 // The bank keys must have been already saved
 client.send(ebics.Orders.DKI(null, null)) // startDate 'YYYY-MM-DD', endDate 'YYYY-MM-DD'

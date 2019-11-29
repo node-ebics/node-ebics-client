@@ -6,18 +6,12 @@ const ebics = require('../index');
 const path = require('path');
 const fs = require('fs');
 const os = require('os');
+const configjs = require('./config.js');
 
-const client = new ebics.Client({
-	url: 'https://ebics.server',
-	partnerId: '',
-	userId: '',
-	hostId: '',
-	passphrase: 'test', // keys-test will be decrypted with this passphrase
-	keyStorage: ebics.fsKeysStorage('./keys-test'),
-});
+const client = gClient;
 
-const bankName = 'Bank name'; // Change this to the bank name you're going to send the letter to.
-const languageCode = 'en'; // Currently 'de' and 'en' are valid values.
+const bankName = gConfig.bankName;
+const languageCode = gConfig.languageCode;
 const template = fs.readFileSync('../templates/ini_'+languageCode+'.hbs').toString();
 const letter = new ebics.BankLetter({ client, bankName, template });
 const bankLetterFile = path.join(os.homedir(), 'bankLetter_'+languageCode+'.html');

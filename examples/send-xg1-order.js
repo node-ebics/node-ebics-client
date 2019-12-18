@@ -5,14 +5,7 @@
 const ebics = require('../index');
 const fs = require('fs');
 
-const client = new ebics.Client({
-	url: 'https://ebics.server',
-	partnerId: '',
-	userId: '',
-	hostId: '',
-	passphrase: 'test', // keys-test will be decrypted with this passphrase
-	keyStorage: ebics.fsKeysStorage('./keys-test'),
-});
+const client = require('./getClient')();
 
 // The bank keys must have been already saved
 const paymentFile = fs.readFileSync('mytestfile.xml').toString();

@@ -2,10 +2,7 @@
 
 'use strict';
 
-const ebics = require('../index');
-const configjs = require('./config.js');
-
-const client = gClient;
+const client = require('./getClient')();
 
 // Client keys must be already generated and send by letter.
 // The bank should have enabled the user

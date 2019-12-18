@@ -2,10 +2,7 @@
 
 'use strict';
 
-const ebics = require('../index');
-const configjs = require('./config.js');
-
-const client = gClient;
+const client = require('./getClient')();
 
 // The bank keys must have been already saved
 client.send(ebics.Orders.STA(null, null)) // startDate 'YYYY-MM-DD', endDate 'YYYY-MM-DD'

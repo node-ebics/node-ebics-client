@@ -1,0 +1,10 @@
+{
+	"serverAddress": "https://ebics-test.server",
+	"partnerId": "EBICS ParnerID Test",
+	"userId": "MyUserIdTest",
+	"hostId": "MyHostIdTest",
+	"passphrase": "MyPasswordTest",
+	"keyStorage": "./keys-test",
+	"bankName":"Test Bank",
+	"languageCode":"en"
+}

@@ -1,0 +1,10 @@
+{
+	"serverAddress": "https://ebics.server",
+	"partnerId": "EBICS ParnerID Production",
+	"userId": "MyUserIdProduction",
+	"hostId": "MyHostIdProduction",
+	"passphrase": "MyPasswordProduction",
+	"keyStorage": "./keys-prod",
+	"bankName":"Production Bank",
+	"languageCode":"en"
+}

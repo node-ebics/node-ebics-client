@@ -3,15 +3,9 @@
 'use strict';
 
 const ebics = require('../index');
+const configjs = require('./config.js');
 
-const client = new ebics.Client({
-	url: 'https://ebics.server',
-	partnerId: '',
-	userId: '',
-	hostId: '',
-	passphrase: 'test', // keys-test will be decrypted with this passphrase
-	keyStorage: ebics.fsKeysStorage('./keys-test'),
-});
+const client = gClient;
 
 // Client keys must be already generated and send by letter.
 // The bank should have enabled the user

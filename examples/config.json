@@ -1,0 +1,42 @@
+{
+    "testing": {
+        "serverAddress": "https://ebics-test.server",
+        "partnerId": "EBICS ParnerID Test",
+        "userId": "MyUserIdTest",
+        "hostId": "MyHostIdTest",
+        "passphrase": "MyPasswordTest",
+        "keyStorage": "./keys-test",
+        "bankName":"Test Bank",
+        "languageCode":"en"
+    },
+    "development": {
+        "serverAddress": "https://ebics-development.server",
+        "partnerId": "EBICS ParnerID Development",
+        "userId": "MyUserIdDevelopment",
+        "hostId": "MyHostIdDevelopment",
+        "passphrase": "MyPasswordDevelopment",
+        "keyStorage": "./keys-development",
+        "bankName":"Development Bank",
+        "languageCode":"en"
+    },
+    "staging": {
+        "serverAddress": "https://ebics-staging.server",
+        "partnerId": "EBICS ParnerID Staging",
+        "userId": "MyUserIdStaging",
+        "hostId": "MyHostIdStaging",
+        "passphrase": "MyPasswordStaging",
+        "keyStorage": "./keys-staging",
+        "bankName":"Staging Bank",
+        "languageCode":"en"
+    },
+    "production": {
+        "serverAddress": "https://ebics.server",
+        "partnerId": "EBICS ParnerID Production",
+        "userId": "MyUserIdProduction",
+        "hostId": "MyHostIdProduction",
+        "passphrase": "MyPasswordProduction",
+        "keyStorage": "./keys-prod",
+        "bankName":"Production Bank",
+        "languageCode":"en"
+    }
+}

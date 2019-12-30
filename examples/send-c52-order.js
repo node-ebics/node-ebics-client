@@ -3,9 +3,10 @@
 'use strict';
 
 const client = require('./getClient')();
+const { Orders } = require('../index');
 
 // The bank keys must have been already saved
-client.send(ebics.Orders.C52(null, null)) // startDate 'YYYY-MM-DD', endDate 'YYYY-MM-DD'
+client.send(Orders.C52(null, null)) // startDate 'YYYY-MM-DD', endDate 'YYYY-MM-DD'
 	.then((resp) => {
 		console.log('Response for C52 order %j', resp);
 		if (resp.technicalCode !== '000000')

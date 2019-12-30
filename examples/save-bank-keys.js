@@ -3,10 +3,11 @@
 'use strict';
 
 const client = require('./getClient')();
+const { Orders } = require('../index');
 
 // Client keys must be already generated and send by letter.
 // The bank should have enabled the user
-client.send(ebics.Orders.HPB)
+client.send(Orders.HPB)
 	.then((resp) => {
 		console.log('Response for HPB order %j', resp);
 		if (resp.technicalCode !== '000000')

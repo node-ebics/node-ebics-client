@@ -6,9 +6,11 @@ const ebics = require('../index');
 const configjs = require('./config.js');
 
 const client = gClient;
+const { Orders } = require('../index');
+
 
 // New keys will be generated and saved in ./keys-test
-client.send(ebics.Orders.INI)
+client.send(Orders.INI)
 	.then((resp) => {
 		console.log('Response for INI order %j', resp);
 		return client.send(ebics.Orders.HIA);

@@ -6,11 +6,12 @@ const ebics = require('../index');
 const fs = require('fs');
 
 const client = require('./getClient')();
+const { Orders } = require('../index');
 
 // The bank keys must have been already saved
 const paymentFile = fs.readFileSync('mytestfile.xml').toString();
 
-client.send(ebics.Orders.XG1(paymentFile))
+client.send(Orders.XG1(paymentFile))
 	.then((resp) => {
 		console.log('Response for XG1 order %j', resp);
 	})

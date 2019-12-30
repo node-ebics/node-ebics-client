@@ -3,9 +3,10 @@
 'use strict';
 
 const client = require('./getClient')();
+const { Orders } = require('../index');
 
 // The bank keys must have been already saved
-client.send(ebics.Orders.HKD)
+client.send(Orders.HKD)
 	.then((resp) => {
 		console.log('Response for HKD order %j', resp);
 		if (resp.technicalCode !== '000000')

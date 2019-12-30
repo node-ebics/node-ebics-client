@@ -3,9 +3,10 @@
 'use strict';
 
 const client = require('./getClient')();
+const { Orders } = require('../index');
 
 // The bank keys must have been already saved
-client.send(ebics.Orders.DKI(null, null)) // startDate 'YYYY-MM-DD', endDate 'YYYY-MM-DD'
+client.send(Orders.DKI(null, null)) // startDate 'YYYY-MM-DD', endDate 'YYYY-MM-DD'
 	.then((resp) => {
 		console.log('Response for DKI order %j', resp);
 		if (resp.technicalCode !== '000000')

@@ -5,14 +5,14 @@ const { Client, fsKeysStorage } = require('../index');
 const loadConfig = require('./loadConfig');
 
 module.exports = ({
-	serverAddress,
+	url,
 	partnerId,
 	userId,
 	hostId,
 	passphrase,
 	keyStoragePath,
 } = loadConfig()) => new Client({
-	serverAddress,
+	url,
 	partnerId,
 	userId,
 	hostId,

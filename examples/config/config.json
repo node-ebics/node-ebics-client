@@ -1,5 +1,5 @@
 {
-	"serverAddress": "https://ebics-test.server",
+	"url": "https://ebics-test.server",
 	"partnerId": "EBICS ParnerID Test",
 	"userId": "MyUserIdTest",
 	"hostId": "MyHostIdTest",

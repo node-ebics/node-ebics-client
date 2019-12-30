@@ -6,15 +6,16 @@ const ebics = require('../index');
 const path = require('path');
 const fs = require('fs');
 const os = require('os');
-const configjs = require('./config.js');
 
-const client = gClient;
+const config = require('./loadConfig')();
+const client = require('./getClient')(config);
 
 const bankName = gConfig.bankName;
 const languageCode = gConfig.languageCode;
-const template = fs.readFileSync('../templates/ini_'+languageCode+'.hbs').toString();
-const letter = new ebics.BankLetter({ client, bankName, template });
+const template = fs.readFileSync('../templates/ini_'+config.languageCode+'.hbs', { encoding: 'utf8 '});
 const bankLetterFile = path.join(os.homedir(), 'bankLetter_'+languageCode+'.html');
+
+const letter = new ebics.BankLetter({ client, bankName, template });
 
 letter.serialize(bankLetterFile)
 	.then(() => {

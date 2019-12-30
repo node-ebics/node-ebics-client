@@ -32,4 +32,4 @@ const loadConfig = (configDirectory = path.join(__dirname, './config'), env = ge
 	}
 }
 
-module.exports = loadConfig();
+module.exports = loadConfig;

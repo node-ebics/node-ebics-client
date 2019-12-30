@@ -4,7 +4,7 @@
 	"userId": "MyUserIdProduction",
 	"hostId": "MyHostIdProduction",
 	"passphrase": "MyPasswordProduction",
-	"keyStorage": "./keys-prod",
+	"keyStoragePath": "./keys-prod",
 	"bankName":"Production Bank",
 	"languageCode":"en"
 }

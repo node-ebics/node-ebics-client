@@ -4,7 +4,7 @@
 	"userId": "MyUserIdTest",
 	"hostId": "MyHostIdTest",
 	"passphrase": "MyPasswordTest",
-	"keyStorage": "./keys-test",
+	"keyStoragePath": "./keys-test",
 	"bankName":"Test Bank",
 	"languageCode":"en"
 }

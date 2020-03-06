@@ -4,7 +4,7 @@
 <h1 align="center">node-ebics-client</h1>
 
 <p align="center">
-<a href="https://travis-ci.org/eCollect/node-ebics-client" title="Build Status"><img src="https://travis-ci.org/eCollect/node-ebics-client.svg?branch=master" alt="Build Status" /></a>
+<a href="https://travis-ci.org/node-ebics/node-ebics-client" title="Build Status"><img src="https://travis-ci.org/node-ebics/node-ebics-client.svg?branch=master" alt="Build Status" /></a>
 <a href="https://www.npmjs.com/package/ebics-client" title="Build Status">
 <img alt="ebics-client" src="https://img.shields.io/npm/v/ebics-client">
 </a>

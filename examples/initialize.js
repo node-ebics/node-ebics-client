@@ -2,12 +2,11 @@
 
 'use strict';
 
+
 const ebics = require('../index');
-const configjs = require('./config.js');
 
-const client = gClient;
+const client = require('./getClient')();
 const { Orders } = require('../index');
-
 
 // New keys will be generated and saved in ./keys-test
 client.send(Orders.INI)

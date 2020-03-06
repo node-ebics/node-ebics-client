@@ -52,11 +52,11 @@
 	"license": "GPL-3.0-only",
 	"dependencies": {
 		"auto-changelog": "^1.16.2",
-		"handlebars": "^4.5.3",
-		"js2xmlparser": "^4.0.0",
+		"handlebars": "^4.7.3",
+		"js2xmlparser": "^4.0.1",
 		"node-forge": "^0.9.1",
-		"request": "^2.88.0",
-		"uuid": "^3.3.3",
+		"request": "^2.88.2",
+		"uuid": "^7.0.2",
 		"xml-crypto": "^1.4.0",
 		"xmldom": "^0.1.27",
 		"xpath": "0.0.27"

@@ -1,5 +1,15 @@
 ### Changelog
 
+#### [v0.1.5](https://github.com/node-ebics/node-ebics-client/compare/v0.1.4...v0.1.5)
+
+> 6 March 2020
+
+- feat: Wait until the keys are generated [`#33`](https://github.com/node-ebics/node-ebics-client/pull/33)
+
+- chore: update deps [`7053a03`](https://github.com/node-ebics/node-ebics-client/commit/7053a03286c700106bb1988fce72338f51ca9a96)
+- changelog [`c5e5941`](https://github.com/node-ebics/node-ebics-client/commit/c5e59414f35a9634e12a6b74163f1b7fa6403de5)
+- fix(examples): orders ref [`4b0bf0e`](https://github.com/node-ebics/node-ebics-client/commit/4b0bf0eba63f3eaa8986d8974ca4c0e647b9029f)
+
 #### [v0.1.4](https://github.com/node-ebics/node-ebics-client/compare/v0.1.3...v0.1.4)
 
 > 18 December 2019

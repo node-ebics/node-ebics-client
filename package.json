@@ -55,24 +55,24 @@
 	],
 	"license": "GPL-3.0-only",
 	"dependencies": {
-		"auto-changelog": "^1.16.2",
-		"handlebars": "^4.7.3",
+		"handlebars": "^4.7.6",
 		"js2xmlparser": "^4.0.1",
 		"node-forge": "^0.9.1",
 		"request": "^2.88.2",
-		"uuid": "^7.0.2",
-		"xml-crypto": "^1.4.0",
-		"xmldom": "^0.1.27",
+		"uuid": "^8.0.0",
+		"xml-crypto": "^1.5.3",
+		"xmldom": "^0.3.0",
 		"xpath": "0.0.27"
 	},
 	"devDependencies": {
+		"auto-changelog": "^1.16.2",
 		"chai": "^4.2.0",
-		"coveralls": "^3.0.9",
+		"coveralls": "^3.1.0",
 		"eslint": "^6.7.2",
 		"eslint-config-ecollect-base": "^0.1.2",
 		"eslint-plugin-import": "^2.18.2",
 		"libxmljs": "^0.19.7",
-		"mocha": "^6.2.2",
-		"nyc": "^14.1.1"
+		"mocha": "^7.1.2",
+		"nyc": "^15.0.1"
 	}
 }

@@ -60,7 +60,7 @@
 		"node-forge": "^0.9.1",
 		"request": "^2.88.2",
 		"uuid": "^8.0.0",
-		"xml-crypto": "^1.5.3",
+		"xml-crypto": "^2.0.0",
 		"xmldom": "^0.3.0",
 		"xpath": "0.0.27"
 	},

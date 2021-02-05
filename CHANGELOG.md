@@ -4,6 +4,8 @@
 
 > 9 May 2020
 
+- fix high severity vulnerabilities [`#44`](https://github.com/node-ebics/node-ebics-client/pull/44)
+- chore(deps): bump lodash from 4.17.15 to 4.17.19 [`#39`](https://github.com/node-ebics/node-ebics-client/pull/39)
 - chore(deps): bump acorn from 7.1.0 to 7.1.1 [`#34`](https://github.com/node-ebics/node-ebics-client/pull/34)
 - feat: Wait until the keys are generated [`#33`](https://github.com/node-ebics/node-ebics-client/pull/33)
 

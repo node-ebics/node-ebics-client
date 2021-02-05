@@ -37,6 +37,6 @@ The basic concept of this library was inspired by the [EPICS](https://github.com
 
 ## Copyright
 
-Copyright: eCollect AG, 2018-9.  
+Copyright: Dimitar Nanov, 2019-2021.  
 Licensed under the [GPLv3](LICENSE) license.
 

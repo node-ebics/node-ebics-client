@@ -1,11 +1,20 @@
 ### Changelog
 
+#### [v0.1.7](https://github.com/node-ebics/node-ebics-client/compare/v0.1.6...v0.1.7)
+
+> 5 February 2021
+
+- fix high severity vulnerabilities [`#44`](https://github.com/node-ebics/node-ebics-client/pull/44)
+- chore(deps): bump lodash from 4.17.15 to 4.17.19 [`#39`](https://github.com/node-ebics/node-ebics-client/pull/39)
+
+- chore: fix dev dependencies voulnarbilities [`d5a24f9`](https://github.com/node-ebics/node-ebics-client/commit/d5a24f9537f676ded8d1996928ed7e76b7b9ba3f)
+- chore: changelog [`a9bbdd9`](https://github.com/node-ebics/node-ebics-client/commit/a9bbdd95c6ce0fdb9cac5452af6fedb4f04b10cb)
+- chore: bump [`b44ff0f`](https://github.com/node-ebics/node-ebics-client/commit/b44ff0f44cd3e88bb6cf278b8d1771f104a8367d)
+
 #### [v0.1.6](https://github.com/node-ebics/node-ebics-client/compare/v0.1.4...v0.1.6)
 
 > 9 May 2020
 
-- fix high severity vulnerabilities [`#44`](https://github.com/node-ebics/node-ebics-client/pull/44)
-- chore(deps): bump lodash from 4.17.15 to 4.17.19 [`#39`](https://github.com/node-ebics/node-ebics-client/pull/39)
 - chore(deps): bump acorn from 7.1.0 to 7.1.1 [`#34`](https://github.com/node-ebics/node-ebics-client/pull/34)
 - feat: Wait until the keys are generated [`#33`](https://github.com/node-ebics/node-ebics-client/pull/33)
 

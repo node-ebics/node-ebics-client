@@ -1,0 +1,12 @@
+{
+	"url": "https://ebics.server",
+	"partnerId": "EBICS ParnerID Production",
+	"userId": "MyUserIdProduction",
+	"hostId": "MyHostIdProduction",
+	"passphrase": "MyPasswordProduction",
+	"keyStoragePath": "./keys-prod",
+	"bankName":"Production Bank Full Name",
+	"bankShortName":"PRODBANKSHORT",
+	"languageCode":"en",
+	"storageLocation":"\\\\myserver\\Share\\Folder\\BankName\\Production\\"
+}

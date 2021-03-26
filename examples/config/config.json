@@ -5,6 +5,8 @@
 	"hostId": "MyHostIdTest",
 	"passphrase": "MyPasswordTest",
 	"keyStoragePath": "./keys-test",
-	"bankName":"Test Bank",
-	"languageCode":"en"
+	"bankName":"Test Bank Full Name",
+	"bankShortName":"TESTBANKSHORT",
+	"languageCode":"en",
+	"storageLocation":"\\\\myserver\\Share\\Folder\\BankName\\Test\\"
 }

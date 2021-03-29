@@ -28,6 +28,7 @@ The client is currently tested and verified to work with the following banks:
 * [Raiffeisen Schweiz](https://www.raiffeisen.ch/rch/de.html)
 * [BW Bank](https://www.bw-bank.de/de/home.html)
 * [Bank GPB International S.A.](https://gazprombank.lu/e-banking)
+* [Bank GPB AO](https://gazprombank.ru/)
 
 
 ## Inspiration

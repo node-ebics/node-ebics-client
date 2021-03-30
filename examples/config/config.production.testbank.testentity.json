@@ -2,11 +2,11 @@
 	"url": "https://ebics.server",
 	"partnerId": "EBICS ParnerID Production",
 	"userId": "MyUserIdProduction",
-	"hostId": "MyHostIdProduction",
+	"hostId": "testbank",
 	"passphrase": "MyPasswordProduction",
-	"keyStoragePath": "./keys-prod",
+	"keyStoragePath": "./config/keys/testbank/keys.production.testbank.testentity",
 	"bankName":"Production Bank Full Name",
-	"bankShortName":"PRODBANKSHORT",
+	"bankShortName":"testbank",
 	"languageCode":"en",
 	"storageLocation":"\\\\myserver\\Share\\Folder\\BankName\\Production\\"
 }

@@ -11,15 +11,15 @@ const currentDate = new Date().toISOString();
 var splitDate = currentDate.split("T");
 
 // The bank keys must have been already saved
-client.send(Orders.C52(null, null)) // startDate 'YYYY-MM-DD', endDate 'YYYY-MM-DD'
+client.send(Orders.HPD)
 	.then((resp) => {
-		console.log('Response for C52 order %j', resp);
+		console.log('Response for HPD order %j', resp);
 		if (resp.technicalCode !== '000000')
 			throw new Error('Something went wrong');
 
-		// Parsing and processing the CAMT052 file should happen somewhere here, ideally after saving it to disk
+		// Parsing and processing the HKD file should happen somewhere here, ideally after saving it to disk
 		const data = Buffer.from(resp.orderData);
-		let distPath = global.entity ? client.storageLocation+"CAMT052_"+client.bankShortName+"_EBICS_"+global.entity+"_"+splitDate[0].replace("-","").replace("-","")+".xml" : client.storageLocation+"CAMT052_"+client.bankShortName+"_EBICS_"+splitDate[0].replace("-","").replace("-","")+".xml";
+		let distPath = global.entity ? client.storageLocation+"HPD_"+client.bankShortName+"_EBICS_"+global.entity+"_"+splitDate[0].replace("-","").replace("-","")+".xml" : client.storageLocation+"HPD_"+client.bankShortName+"_EBICS_"+splitDate[0].replace("-","").replace("-","")+".xml";
 		fs.writeFile(distPath, data.toString('utf8'), function (err)
 		{
 			if(err) {

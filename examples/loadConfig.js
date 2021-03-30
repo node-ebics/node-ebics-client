@@ -20,11 +20,22 @@ const getDefaultEnv = () => {
 	return parArg || process.env.NODE_ENV;
 }
 
-const loadConfig = (configDirectory = path.join(__dirname, './config'), env = getDefaultEnv()) => {
-	console.log(`Loading config form ${configDirectory} with env set to ${env}.`);
+const getBankIdentifier = () => {
+	const [,,,parArg] = process.argv;
+	return parArg || "testbank";
+}
 
+const getEntityIdentifier = () => {
+	const [,,,,parArg] = process.argv;
+	return parArg || ""
+}
+
+const loadConfig = (configDirectory = path.join(__dirname, './config'), env = getDefaultEnv(), bank = getBankIdentifier(), entity = getEntityIdentifier()) => {
+	entity ? console.log(`Loading config from ${configDirectory} with env set to ${env}, bank set to ${bank} and entity set to ${entity}.`) : console.log(`Loading config from ${configDirectory} with env set to ${env} and bank set to ${bank}.`);
+
+	global.entity = entity;
 	const baseConfigFile = path.join(configDirectory, 'config.json');
-	const envConfigFile = env ? path.join(configDirectory, `config.${env}.json`) : null;
+	const envConfigFile = env ? entity ? path.join(configDirectory, `config.${env}.${bank}.${entity}.json`) : path.join(configDirectory, `config.${env}.${bank}.json`) : null;
 
 	return {
 		...safeLoadJson(baseConfigFile),

@@ -1,5 +1,12 @@
 ### Changelog
 
+#### [v0.2.1](https://github.com/node-ebics/node-ebics-client/compare/v0.2.0...v0.2.1)
+
+> 30 March 2021
+
+- bump version [`d0c6d76`](https://github.com/node-ebics/node-ebics-client/commit/d0c6d764318470ef66da9be79d8716c17392f16b)
+- fix: crypto check [`936e103`](https://github.com/node-ebics/node-ebics-client/commit/936e103c3f36acb697404b4bca4cf2607f3c79e5)
+
 #### [v0.2.0](https://github.com/node-ebics/node-ebics-client/compare/v0.1.7...v0.2.0)
 
 > 30 March 2021
@@ -13,9 +20,9 @@
 - Add support for Bank GPB AO (Gazprombank Russia) [`#49`](https://github.com/node-ebics/node-ebics-client/pull/49)
 - Add sample code for zipped CAMT statements [`#48`](https://github.com/node-ebics/node-ebics-client/pull/48)
 
+- chore: changelog [`9ee2be9`](https://github.com/node-ebics/node-ebics-client/commit/9ee2be97c4e7f0921477e3c92c2252c19fb85a7e)
 - chore: cleanup & bump [`f9fb6d3`](https://github.com/node-ebics/node-ebics-client/commit/f9fb6d3dc94c27a0c983205ce0ef00e4a18f95ff)
 - merge [`2d580c0`](https://github.com/node-ebics/node-ebics-client/commit/2d580c0d443b0ec0d103a94b64c803bfa1dd6b0b)
-- chore: update deps [`e642024`](https://github.com/node-ebics/node-ebics-client/commit/e6420244dc5d218926ede3b0123897096fb6dfd9)
 
 #### [v0.1.7](https://github.com/node-ebics/node-ebics-client/compare/v0.1.6...v0.1.7)
 

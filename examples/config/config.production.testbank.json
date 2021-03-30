@@ -5,6 +5,8 @@
 	"hostId": "MyHostIdProduction",
 	"passphrase": "MyPasswordProduction",
 	"keyStoragePath": "./keys-prod",
-	"bankName":"Production Bank",
-	"languageCode":"en"
+	"bankName":"Production Bank Full Name",
+	"bankShortName":"PRODBANKSHORT",
+	"languageCode":"en",
+	"storageLocation":"\\\\myserver\\Share\\Folder\\BankName\\Production\\"
 }

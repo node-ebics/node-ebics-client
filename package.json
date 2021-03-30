@@ -63,10 +63,17 @@
 		"js2xmlparser": "^4.0.1",
 		"node-forge": "^0.10.0",
 		"request": "^2.88.2",
+<<<<<<< HEAD
 		"uuid": "^8.3.2",
 		"xml-crypto": "^2.1.1",
 		"xmldom": "^0.5.0",
 		"xpath": "0.0.32"
+=======
+		"uuid": "^8.0.0",
+		"xml-crypto": "^2.0.0",
+		"xmldom": "^0.5.0",
+		"xpath": "0.0.27"
+>>>>>>> cecaa782c93ee847c48b6580ee6c82b5a495f240
 	},
 	"devDependencies": {
 		"auto-changelog": "^1.16.2",

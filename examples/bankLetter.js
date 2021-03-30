@@ -9,10 +9,9 @@ const os = require('os');
 
 const config = require('./loadConfig')();
 const client = require('./getClient')(config);
-const bankName = config.bankName;
-const languageCode = config.languageCode;
-const template = fs.readFileSync('../templates/ini_'+config.languageCode+'.hbs', { encoding: 'utf8 '});
-const bankLetterFile = path.join(os.homedir(), 'bankLetter_'+languageCode+'.html');
+const bankName = client.bankName;
+const template = fs.readFileSync("../templates/ini_"+client.languageCode+".hbs", { encoding: 'utf8'});
+const bankLetterFile = path.join("./", "bankLetter_"+client.bankShortName+"_"+client.languageCode+".html");
 
 const letter = new ebics.BankLetter({ client, bankName, template });
 

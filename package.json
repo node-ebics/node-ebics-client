@@ -1,6 +1,6 @@
 {
 	"name": "ebics-client",
-	"version": "0.1.7",
+	"version": "0.2.0",
 	"description": "Node.js ISO 20022 Compliant EBICS Client",
 	"main": "index.js",
 	"files": [

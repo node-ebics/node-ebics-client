@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta charset="UTF-8" />
+	<title>EBICS ini</title>
+</head>
+
+<body>
+	<div>
+		<h2>Lettre d'initialisation pour clés électroniques bancaires (INI)</h2>
+		<table>
+			<tr>
+				<td>Date</td>
+				<td>{{ today }}</td>
+			</tr>
+			<tr>
+				<td>Heure</td>
+				<td>{{ now }}</td>
+			</tr>
+			<tr>
+				<td>Banque</td>
+				<td>{{ bankName }}</td>
+			</tr>
+			<tr>
+				<td>ID Utilisateur</td>
+				<td>{{ userId }}</td>
+			</tr>
+			<tr>
+				<td>ID Partenaire</td>
+				<td>{{ partnerId }}</td>
+			</tr>
+		</table>
+		<p>Clé publique (Public Key) pour la signature électronique (A006)</p>
+		<p>Exposant ({{ keyExponentBits A006 }} Bit):</p>
+		<p>
+			<code>{{ keyExponent A006 }}</code>
+		</p>
+		<p>Modulo ({{ keyModulusBits A006 }} Bit):</p>
+		<p>
+			<code>{{ keyModulus A006 }}</code>
+		</p>
+		<p>Hash (SHA-256):</p>
+		<p>
+			<code>{{ sha256 A006 }}</code>
+		</p>
+		<p>Je confirme par la présente la clé publique ci-dessus pour ma signature électronique.</p>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<table>
+			<tr>
+				<td>_________________________</td>
+				<td>_________________________</td>
+				<td>_________________________</td>
+			</tr>
+			<tr>
+				<td>Lieu/Date</td>
+				<td>Nom/Entreprise</td>
+				<td>Signature</td>
+			</tr>
+		</table>
+	</div>
+	<div style="page-break-after:always"></div>
+	<h2>Lettre d'initialisation pour clés électroniques bancaires (HIA) - Page 1/2</h2>
+	<table>
+		<tr>
+			<td>Date</td>
+			<td>{{ today }}</td>
+		</tr>
+		<tr>
+			<td>Heure</td>
+			<td>{{ now }}</td>
+		</tr>
+		<tr>
+			<td>Banque</td>
+			<td>{{ bankName }}</td>
+		</tr>
+		<tr>
+			<td>ID Utilisateur</td>
+			<td>{{ userId }}</td>
+		</tr>
+		<tr>
+			<td>ID Partenaire</td>
+			<td>{{ partnerId }}</td>
+		</tr>
+	</table>
+	<div>
+		<p>Clé d'identification publique (X002)</p>
+		<p>Exposant ({{ keyExponentBits X002 }} Bit):</p>
+		<p>
+			<code>{{ keyExponent X002 }}</code>
+		</p>
+		<p>Modulo ({{ keyModulusBits X002 }} Bit):</p>
+		<p>
+			<code>{{ keyModulus X002 }}</code>
+		</p>
+		<p>Hash (SHA-256):</p>
+		<p>
+			<code>{{ sha256 X002 }}</code>
+		</p>
+		<p>Suite à la page 2 ...</p>
+		<div style="page-break-after:always"></div>
+		<h2>Lettre d'initialisation pour clés électroniques bancaires (HIA) - Page 2/2</h2>
+	<table>
+		<tr>
+			<td>Date</td>
+			<td>{{ today }}</td>
+		</tr>
+		<tr>
+			<td>Heure</td>
+			<td>{{ now }}</td>
+		</tr>
+		<tr>
+			<td>Banque</td>
+			<td>{{ bankName }}</td>
+		</tr>
+		<tr>
+			<td>ID Utilisateur</td>
+			<td>{{ userId }}</td>
+		</tr>
+		<tr>
+			<td>ID Partenaire</td>
+			<td>{{ partnerId }}</td>
+		</tr>
+	</table>
+	</div>
+	<div>
+		<p>Clé de chiffrement publique (E002)</p>
+		<p>Exposant ({{ keyExponentBits E002 }} Bit):</p>
+		<p>
+			<code>{{ keyExponent E002 }}</code>
+		</p>
+		<p>Modulo ({{ keyModulusBits E002 }} Bit):</p>
+		<p>
+			<code>{{ keyModulus E002 }}</code>
+		</p>
+		<p>Hash (SHA-256):</p>
+		<p>
+			<code>{{ sha256 E002 }}</code>
+		</p>
+		<p>Je confirme par la présente les clés publiques ci-dessus.</p>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<table>
+			<tr>
+				<td>_________________________</td>
+				<td>_________________________</td>
+				<td>_________________________</td>
+			</tr>
+			<tr>
+				<td>Lieu/Date</td>
+				<td>Nom/Entreprise</td>
+				<td>Signature</td>
+			</tr>
+		</table>
+	</div>
+</body>
+
+</html>

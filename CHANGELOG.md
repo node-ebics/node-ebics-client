@@ -1,5 +1,22 @@
 ### Changelog
 
+#### [v0.2.0](https://github.com/node-ebics/node-ebics-client/compare/v0.1.7...v0.2.0)
+
+> 30 March 2021
+
+- chore(deps): bump y18n from 4.0.0 to 4.0.1 [`#56`](https://github.com/node-ebics/node-ebics-client/pull/56)
+- Add additional bank configuration items [`#53`](https://github.com/node-ebics/node-ebics-client/pull/53)
+- chore(deps): bump xmldom from 0.3.0 to 0.5.0 [`#46`](https://github.com/node-ebics/node-ebics-client/pull/46)
+- Cryto.js: Nasty workaround for incorrect signature (257 vs 256) and h… [`#50`](https://github.com/node-ebics/node-ebics-client/pull/50)
+- Examples: Improve config implementation for multibank [`#51`](https://github.com/node-ebics/node-ebics-client/pull/51)
+- README.md: Add J.P. Morgan to tested banks [`#55`](https://github.com/node-ebics/node-ebics-client/pull/55)
+- Add support for Bank GPB AO (Gazprombank Russia) [`#49`](https://github.com/node-ebics/node-ebics-client/pull/49)
+- Add sample code for zipped CAMT statements [`#48`](https://github.com/node-ebics/node-ebics-client/pull/48)
+
+- chore: cleanup & bump [`f9fb6d3`](https://github.com/node-ebics/node-ebics-client/commit/f9fb6d3dc94c27a0c983205ce0ef00e4a18f95ff)
+- merge [`2d580c0`](https://github.com/node-ebics/node-ebics-client/commit/2d580c0d443b0ec0d103a94b64c803bfa1dd6b0b)
+- chore: update deps [`e642024`](https://github.com/node-ebics/node-ebics-client/commit/e6420244dc5d218926ede3b0123897096fb6dfd9)
+
 #### [v0.1.7](https://github.com/node-ebics/node-ebics-client/compare/v0.1.6...v0.1.7)
 
 > 5 February 2021
@@ -8,8 +25,8 @@
 - chore(deps): bump lodash from 4.17.15 to 4.17.19 [`#39`](https://github.com/node-ebics/node-ebics-client/pull/39)
 
 - chore: fix dev dependencies voulnarbilities [`d5a24f9`](https://github.com/node-ebics/node-ebics-client/commit/d5a24f9537f676ded8d1996928ed7e76b7b9ba3f)
+- changelog [`a998538`](https://github.com/node-ebics/node-ebics-client/commit/a998538316c963896c0e7ca76002513f9ea4a01a)
 - chore: changelog [`a9bbdd9`](https://github.com/node-ebics/node-ebics-client/commit/a9bbdd95c6ce0fdb9cac5452af6fedb4f04b10cb)
-- chore: bump [`b44ff0f`](https://github.com/node-ebics/node-ebics-client/commit/b44ff0f44cd3e88bb6cf278b8d1771f104a8367d)
 
 #### [v0.1.6](https://github.com/node-ebics/node-ebics-client/compare/v0.1.4...v0.1.6)
 

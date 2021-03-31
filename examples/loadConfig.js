@@ -15,27 +15,39 @@ const safeLoadJson = (file) => {
 	}
 }
 
-const getDefaultEnv = () => {
-	const [,,parArg] = process.argv;
-	return parArg || process.env.NODE_ENV;
-}
+var argv = require('yargs/yargs')(process.argv.slice(2))
+	.string(['environment', 'hostid', 'ordertype', 'entity', 'startdate', 'enddate', 'filename'])
+	.demandOption(['environment', 'hostid', 'ordertype'])
+	.alias('env', 'environment')
+	.alias('h', 'hostid')
+	.alias('o', 'ordertype')
+	.alias('ent', 'entity')
+	.alias('s', 'startdate')
+	.alias('e', 'enddate')
+	.alias('f', 'filename')
+	.describe('env', 'Specify the environment to use, usually \'testing\' or \'production\'')
+	.describe('o', 'Specify the EBICS order type to use')
+	.describe('h', 'Specify the EBICS hostId to use')
+	.describe('ent', 'Specify the entity to use')
+	.describe('s', 'Specify the start date for the download in yyyy-mm-dd format')
+	.describe('e', 'Specify the end date for the download in yyyy-mm-dd format')
+	.describe('f', 'Specify the filename to upload')
+	.argv
 
-const getBankIdentifier = () => {
-	const [,,,parArg] = process.argv;
-	return parArg || "testbank";
-}
+	//Define all command line parameters as globals so we can use them from other files as well.
+	global.entity = argv.entity || ""
+	global.environment = argv.environment || process.env.NODE_ENV;
+	global.hostid = argv.hostid || "testbank";
+	global.ordertype = argv.ordertype || "";
+	global.startdate = argv.startdate || null;
+	global.enddate = argv.enddate || null;
+	global.filename = argv.filename || "";
 
-const getEntityIdentifier = () => {
-	const [,,,,parArg] = process.argv;
-	return parArg || ""
-}
+	const loadConfig = (configDirectory = path.join(__dirname, './config')) => {
+	global.entity ? console.log(`Loading config from ${configDirectory} with env set to `+global.environment+`, bank set to `+global.hostid+` and entity set to `+global.entity) : console.log(`Loading config from ${configDirectory} with env set to `+global.environment+` and bank set to `+global.hostid);
 
-const loadConfig = (configDirectory = path.join(__dirname, './config'), env = getDefaultEnv(), bank = getBankIdentifier(), entity = getEntityIdentifier()) => {
-	entity ? console.log(`Loading config from ${configDirectory} with env set to ${env}, bank set to ${bank} and entity set to ${entity}.`) : console.log(`Loading config from ${configDirectory} with env set to ${env} and bank set to ${bank}.`);
-
-	global.entity = entity;
 	const baseConfigFile = path.join(configDirectory, 'config.json');
-	const envConfigFile = env ? entity ? path.join(configDirectory, `config.${env}.${bank}.${entity}.json`) : path.join(configDirectory, `config.${env}.${bank}.json`) : null;
+	const envConfigFile = global.environment ? global.entity ? path.join(configDirectory, `config.`+global.environment+`.`+global.hostid+`.`+global.entity+`.json`) : path.join(configDirectory, `config.`+global.environment+`.`+global.hostid+`.json`) : null;
 
 	return {
 		...safeLoadJson(baseConfigFile),

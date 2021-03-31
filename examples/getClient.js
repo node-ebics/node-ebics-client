@@ -11,6 +11,9 @@ module.exports = ({
 	hostId,
 	passphrase,
 	keyStoragePath,
+	bankName,
+	languageCode,
+	storageLocation,
 } = loadConfig()) => new Client({
 	url,
 	partnerId,
@@ -18,4 +21,7 @@ module.exports = ({
 	hostId,
 	passphrase,
 	keyStorage: fsKeysStorage(keyStoragePath),
+	bankName,
+	languageCode,
+	storageLocation,
 });

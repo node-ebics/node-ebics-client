@@ -39,6 +39,6 @@ The basic concept of this library was inspired by the [EPICS](https://github.com
 
 ## Copyright
 
-Copyright: Dimitar Nanov, 2019-2021.  
+Copyright: Dimitar Nanov, 2019-2022.  
 Licensed under the [MIT](LICENSE) license.
 

@@ -75,7 +75,7 @@
 		"eslint": "^6.7.2",
 		"eslint-config-ecollect-base": "^0.1.2",
 		"eslint-plugin-import": "^2.18.2",
-		"libxmljs": "^0.19.7",
+		"libxmljs": "^0.19.10",
 		"mocha": "^7.1.2",
 		"nyc": "^15.1.0"
 	}

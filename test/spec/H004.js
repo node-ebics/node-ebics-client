@@ -1,18 +1,20 @@
-'use strict';
+"use strict";
 
 /* eslint-env node, mocha */
 
-const { assert } = require('chai');
+const { assert } = require("chai");
 
-const path = require('path');
-const fs = require('fs');
+const path = require("path");
+const fs = require("fs");
 
-const ebics = require('../../');
+const ebics = require("../../");
 
-const libxml = require('libxmljs');
+const libxml = require("libxmljs");
 
-const schemaPath = path.resolve(__dirname, '../xsd/ebics_H004.xsd');
-const schemaDoc = libxml.parseXml(fs.readFileSync(schemaPath, { encoding: 'utf8' }));
+const schemaPath = path.resolve(__dirname, "../xsd/ebics_H004.xsd");
+const schemaDoc = libxml.parseXml(
+	fs.readFileSync(schemaPath, { encoding: "utf8" })
+);
 
 const schemaDir = path.dirname(schemaPath);
 const cwd = process.cwd();
@@ -20,7 +22,7 @@ const cwd = process.cwd();
 const validateXML = (str) => {
 	try {
 		process.chdir(schemaDir);
-		const isValid = libxml.parseXmlString(str).validate(schemaDoc);
+		const isValid = libxml.parseXml(str).validate(schemaDoc);
 		process.chdir(cwd);
 		return isValid;
 	} catch (e) {
@@ -30,12 +32,14 @@ const validateXML = (str) => {
 };
 
 const client = new ebics.Client({
-	url: 'https://iso20022test.credit-suisse.com/ebicsweb/ebicsweb',
-	partnerId: 'CRS04381',
-	userId: 'CRS04381',
-	hostId: 'CRSISOTB',
-	passphrase: 'test',
-	keyStorage: ebics.fsKeysStorage(path.resolve(__dirname, '../support/TEST_KEYS.key')),
+	url: "https://iso20022test.credit-suisse.com/ebicsweb/ebicsweb",
+	partnerId: "CRS04381",
+	userId: "CRS04381",
+	hostId: "CRSISOTB",
+	passphrase: "test",
+	keyStorage: ebics.fsKeysStorage(
+		path.resolve(__dirname, "../support/TEST_KEYS.key")
+	),
 });
 
 const { Orders } = ebics;
@@ -52,8 +56,8 @@ const CCS = require('./CCS');
 const XE3 = require('./XE3');
 const XCT = require('./XCT');
 */
-const uploadBuilder = fn => fn('');
-const dateBuilder = fn => fn('2018-01-01', '2019-01-01');
+const uploadBuilder = (fn) => fn("");
+const dateBuilder = (fn) => fn("2018-01-01", "2019-01-01");
 
 const fnOrders = {
 	// upload | document
@@ -83,19 +87,16 @@ const fnOrders = {
 };
 
 const getOrderObject = (name, order) => {
-	if (typeof order === 'object')
-		return order;
-	if (fnOrders[name])
-		return fnOrders[name](order);
+	if (typeof order === "object") return order;
+	if (fnOrders[name]) return fnOrders[name](order);
 	return null;
 };
 
-describe('H004 order generation', () => {
+describe("H004 order generation", () => {
 	// eslint-disable-next-line no-restricted-syntax
 	for (const [name, orderDefinition] of Object.entries(Orders)) {
 		const order = getOrderObject(name, orderDefinition);
-		if (!order)
-			continue;
+		if (!order) continue;
 
 		const type = order.orderDetails.OrderType;
 		const { operation } = order;

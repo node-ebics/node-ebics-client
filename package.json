@@ -1,6 +1,6 @@
 {
 	"name": "ebics-client",
-	"version": "0.2.1",
+	"version": "4.0.0",
 	"description": "Node.js ISO 20022 Compliant EBICS Client",
 	"main": "index.js",
 	"files": [
@@ -59,13 +59,13 @@
 	],
 	"license": "GPL-3.0-only",
 	"dependencies": {
+		"@xmldom/xmldom": "^0.8.10",
 		"handlebars": "^4.7.8",
 		"js2xmlparser": "^5.0.0",
 		"node-forge": "^1.3.1",
-		"request": "^2.88.2",
+		"rock-req": "^5.1.3",
 		"uuid": "^9.0.1",
 		"xml-crypto": "^4.0.1",
-		"@xmldom/xmldom": "^0.8.10",
 		"xpath": "0.0.32"
 	},
 	"devDependencies": {

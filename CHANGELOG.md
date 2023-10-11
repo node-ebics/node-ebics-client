@@ -1,5 +1,21 @@
 ### Changelog
 
+#### [v4.0.0](https://github.com/node-ebics/node-ebics-client/compare/v3.0.0...v0.4.0)
+
+- Add CI [`#75`](https://github.com/node-ebics/node-ebics-client/pull/75)
+
+- feat: update dependencies [`a03ec22`](https://github.com/node-ebics/node-ebics-client/commit/a03ec2283fdd3dcf750c5ed448f0195d92c5c9f0)
+- chore: Update dev dependency libxmljs [`3a8dc1d`](https://github.com/node-ebics/node-ebics-client/commit/3a8dc1da0bac20a6f25a687da0a783f3b52d5163)
+- feat: replace &lt;request&gt; with &lt;rock-req&gt; [`b6b2751`](https://github.com/node-ebics/node-ebics-client/commit/b6b27516d5854b38dcdbe56f23967001f844e631)
+
+### [v3.0.0](https://github.com/node-ebics/node-ebics-client/compare/v0.2.1...v3.0.0)
+
+> 4 August 2022
+
+- Update LICENSE [`7520a56`](https://github.com/node-ebics/node-ebics-client/commit/7520a56be8ba446d3466c6dc9202b1d65ea3396f)
+- changelog [`fe0f585`](https://github.com/node-ebics/node-ebics-client/commit/fe0f585b277c390415841a343aa86d4533997057)
+- chore: update license in package.json, bump version [`b46b214`](https://github.com/node-ebics/node-ebics-client/commit/b46b214e57cf1b4e30455da306b26b3a06dc8a5f)
+
 #### [v0.2.1](https://github.com/node-ebics/node-ebics-client/compare/v0.2.0...v0.2.1)
 
 > 30 March 2021
@@ -84,38 +100,43 @@
 
 #### [v0.1.1](https://github.com/node-ebics/node-ebics-client/compare/v0.1.0...v0.1.1)
 
-> 5 November 2019
+> 7 November 2019
 
 - chore: update license [`9aabe93`](https://github.com/node-ebics/node-ebics-client/commit/9aabe933e91b506ea38820b952ce8e5e58b4c2ff)
 
-#### [v0.1.0](https://github.com/node-ebics/node-ebics-client/compare/v0.0.8...v0.1.0)
+#### [v0.1.0](https://github.com/node-ebics/node-ebics-client/compare/v0.0.36...v0.1.0)
 
 > 5 November 2019
 
 - Feat: handle unsual exponent migrate to node-forge [`#16`](https://github.com/node-ebics/node-ebics-client/pull/16)
 - Add order generation tests and fix linting [`#15`](https://github.com/node-ebics/node-ebics-client/pull/15)
 - test script run mocha [`#14`](https://github.com/node-ebics/node-ebics-client/pull/14)
+- chore: readme maintenance [`#11`](https://github.com/node-ebics/node-ebics-client/pull/11)
+- Provide examples [`#10`](https://github.com/node-ebics/node-ebics-client/pull/10)
+- * Add Z53 order type [`#7`](https://github.com/node-ebics/node-ebics-client/pull/7)
+- remove eCollect from constant and minor verbose error handeling [`#2`](https://github.com/node-ebics/node-ebics-client/pull/2)
+- add iso pain format XCT order type [`#1`](https://github.com/node-ebics/node-ebics-client/pull/1)
+- remove eCollect from constant and minor verbose error handaling [`#4`](https://github.com/node-ebics/node-ebics-client/pull/4)
+- add iso pain format XCT order type [`#5`](https://github.com/node-ebics/node-ebics-client/pull/5)
+- Fix parsing of the bank keys in the HPB response [`#3`](https://github.com/node-ebics/node-ebics-client/pull/3)
 
 - feat: prepare order generation tests [`e40f79c`](https://github.com/node-ebics/node-ebics-client/commit/e40f79cee68a194272c93f07e763175b213a77a1)
-- chore: cleanup [`0c01420`](https://github.com/node-ebics/node-ebics-client/commit/0c01420c1e14992a4169098ccd47cd196b899f06)
+- Major changes. Separating responsibilities. Orders builder, serializer. [`ff9a3a1`](https://github.com/node-ebics/node-ebics-client/commit/ff9a3a16b47d0a25674134c875bfd651995837e4)
+- code optimization [`1876360`](https://github.com/node-ebics/node-ebics-client/commit/187636019c290d757aca77d4c14fb4f2519acd38)
 
 #### [v0.0.36](https://github.com/node-ebics/node-ebics-client/compare/v0.0.35...v0.0.36)
 
-> 1 June 2018
+> 7 November 2019
 
 - various modular fixes [`8492d94`](https://github.com/node-ebics/node-ebics-client/commit/8492d940542f61b17aa3a2da7de23f6539ffaad5)
 
-#### [v0.0.35](https://github.com/node-ebics/node-ebics-client/compare/v0.0.3...v0.0.35)
+#### [v0.0.35](https://github.com/node-ebics/node-ebics-client/compare/v0.0.8...v0.0.35)
 
-> 31 May 2018
-
-- update License to GPL v3 [`babcf76`](https://github.com/node-ebics/node-ebics-client/commit/babcf76b61af6eb737ab291a301e71bb84621820)
-- Add MGF1.js file - mask generation utility class [`7e6e2ff`](https://github.com/node-ebics/node-ebics-client/commit/7e6e2ff142688b0c453369fa7137b49e8b89cd81)
-- Add sign, _emsaPSS and _modPowe methods in Key.js file [`5ace213`](https://github.com/node-ebics/node-ebics-client/commit/5ace2137231af9a3563ab31fa0f70fbdf4b148cb)
+> 7 November 2019
 
 #### [v0.0.8](https://github.com/node-ebics/node-ebics-client/compare/v0.0.7...v0.0.8)
 
-> 8 October 2019
+> 7 November 2019
 
 - chore: readme maintenance [`#11`](https://github.com/node-ebics/node-ebics-client/pull/11)
 - Provide examples [`#10`](https://github.com/node-ebics/node-ebics-client/pull/10)
@@ -126,7 +147,7 @@
 
 #### [v0.0.7](https://github.com/node-ebics/node-ebics-client/compare/v0.0.6...v0.0.7)
 
-> 2 August 2019
+> 7 November 2019
 
 - * Add Z53 order type [`#7`](https://github.com/node-ebics/node-ebics-client/pull/7)
 - remove eCollect from constant and minor verbose error handeling [`#2`](https://github.com/node-ebics/node-ebics-client/pull/2)
@@ -138,7 +159,7 @@
 
 #### [v0.0.6](https://github.com/node-ebics/node-ebics-client/compare/v0.0.5...v0.0.6)
 
-> 24 July 2019
+> 7 November 2019
 
 - remove eCollect from constant and minor verbose error handaling [`#4`](https://github.com/node-ebics/node-ebics-client/pull/4)
 - add iso pain format XCT order type [`#5`](https://github.com/node-ebics/node-ebics-client/pull/5)
@@ -148,24 +169,24 @@
 
 #### [v0.0.5](https://github.com/node-ebics/node-ebics-client/compare/v0.0.4...v0.0.5)
 
-> 28 June 2019
+> 7 November 2019
 
 - Fix parsing of the bank keys in the HPB response [`#3`](https://github.com/node-ebics/node-ebics-client/pull/3)
 
 - tc for bank keys parsing error [`c571ef1`](https://github.com/node-ebics/node-ebics-client/commit/c571ef181bca2e0cbec70bc6df53c706acd6c829)
 - #2 corrected bank keys parsing [`5f0b6cd`](https://github.com/node-ebics/node-ebics-client/commit/5f0b6cd3747c4613920d2f71f3c04ce13225d397)
 
-#### [v0.0.4](https://github.com/node-ebics/node-ebics-client/compare/v0.0.36...v0.0.4)
+#### [v0.0.4](https://github.com/node-ebics/node-ebics-client/compare/v0.0.3...v0.0.4)
 
 > 3 September 2018
 
 - Major changes. Separating responsibilities. Orders builder, serializer. [`ff9a3a1`](https://github.com/node-ebics/node-ebics-client/commit/ff9a3a16b47d0a25674134c875bfd651995837e4)
 - code optimization [`1876360`](https://github.com/node-ebics/node-ebics-client/commit/187636019c290d757aca77d4c14fb4f2519acd38)
-- client and order optimization [`9454992`](https://github.com/node-ebics/node-ebics-client/commit/945499290a8698aed504b573019de2c23148006a)
+- various modular fixes [`8492d94`](https://github.com/node-ebics/node-ebics-client/commit/8492d940542f61b17aa3a2da7de23f6539ffaad5)
 
 #### v0.0.3
 
-> 17 May 2018
+> 7 November 2019
 
 - initial commit [`1f947ff`](https://github.com/node-ebics/node-ebics-client/commit/1f947ff1480c522f89fa1f547581b55e2378d920)
 - Initial commit [`cd37de3`](https://github.com/node-ebics/node-ebics-client/commit/cd37de3895e32a61798c79ce3a6447e2f269019d)

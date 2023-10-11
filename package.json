@@ -1,6 +1,6 @@
 {
 	"name": "ebics-client",
-	"version": "0.2.1",
+	"version": "4.0.0",
 	"description": "Node.js ISO 20022 Compliant EBICS Client",
 	"main": "index.js",
 	"files": [
@@ -9,7 +9,6 @@
 	],
 	"scripts": {
 		"lint": "eslint .",
-		"lint-fix": "eslint --fix .",
 		"test": "nyc mocha test/**/*.js",
 		"coverage": "nyc report --reporter=text-lcov | coveralls",
 		"version": "auto-changelog -p -t changelog-template.hbs && git add CHANGELOG.md"

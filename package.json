@@ -1,6 +1,6 @@
 {
 	"name": "ebics-client",
-	"version": "4.0.0",
+	"version": "4.1.0",
 	"description": "Node.js ISO 20022 Compliant EBICS Client",
 	"main": "index.js",
 	"files": [
@@ -57,7 +57,7 @@
 			"url": "https://github.com/Herrie82"
 		}
 	],
-	"license": "GPL-3.0-only",
+	"license": "MIT",
 	"dependencies": {
 		"@xmldom/xmldom": "^0.8.10",
 		"handlebars": "^4.7.8",

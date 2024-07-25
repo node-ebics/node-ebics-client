@@ -1,5 +1,11 @@
 ### Changelog
 
+#### [v4.2.0]
+
+- feat: update dependencies [`a03ec22`](https://github.com/node-ebics/node-ebics-client/commit/a03ec2283fdd3dcf750c5ed448f0195d92c5c9f0)
+- chore: Update dev dependency libxmljs [`3a8dc1d`](https://github.com/node-ebics/node-ebics-client/commit/3a8dc1da0bac20a6f25a687da0a783f3b52d5163)
+- feat: replace &lt;request&gt; with &lt;rock-req&gt; [`b6b2751`](https://github.com/node-ebics/node-ebics-client/commit/b6b27516d5854b38dcdbe56f23967001f844e631)
+
 #### [v4.0.0](https://github.com/node-ebics/node-ebics-client/compare/v3.0.0...v0.4.0)
 
 - Add CI [`#75`](https://github.com/node-ebics/node-ebics-client/pull/75)

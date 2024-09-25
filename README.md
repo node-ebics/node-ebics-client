@@ -15,9 +15,9 @@
 <a href='https://coveralls.io/github/eCollect/node-ebics-client?branch=master' title="Coverage Status"><img src='https://coveralls.io/repos/github/eCollect/node-ebics-client/badge.svg?branch=master' alt='Coverage Status' /></a>
 </p>
 
-Pure node.js ( >=8 ) implementation of [EBICS](https://en.wikipedia.org/wiki/Electronic_Banking_Internet_Communication_Standard) ( Electronic Banking Internet Communication ).
+Pure node.js (>= 16) implementation of [EBICS](https://en.wikipedia.org/wiki/Electronic_Banking_Internet_Communication_Standard) (Electronic Banking Internet Communication).
 
-The client is aimed to be 100% [ISO 20022](https://www.iso20022.org) compliant, and supports the complete initializations process ( INI, HIA, HPB orders ) and HTML letter generation.
+The client is aimed to be 100% [ISO 20022](https://www.iso20022.org) compliant, and supports the complete initializations process (INI, HIA, HPB orders) and HTML letter generation.
 
 
 ## Supported Banks
@@ -41,4 +41,3 @@ The basic concept of this library was inspired by the [EPICS](https://github.com
 
 Copyright: Dimitar Nanov, 2019-2022.  
 Licensed under the [MIT](LICENSE) license.
-

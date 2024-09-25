@@ -9,7 +9,7 @@
 	],
 	"scripts": {
 		"lint": "eslint .",
-		"test": "nyc mocha test/**/*.js",
+		"test": "nyc node --security-revert=CVE-2023-46809 ./node_modules/.bin/mocha test/**/*.js",
 		"coverage": "nyc report --reporter=text-lcov | coveralls",
 		"version": "auto-changelog -p -t changelog-template.hbs && git add CHANGELOG.md"
 	},

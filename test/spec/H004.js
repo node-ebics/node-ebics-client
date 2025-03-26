@@ -9,27 +9,36 @@ const fs = require('fs');
 
 const ebics = require('../../');
 
-const libxml = require('libxmljs');
+const xmlLintWasm = require('xmllint-wasm');
 
-const schemaPath = path.resolve(__dirname, '../xsd/ebics_H004.xsd');
-const schemaDoc = libxml.parseXml(
-	fs.readFileSync(schemaPath, { encoding: 'utf8' }),
-);
+const validateXML = (() => {
+	const xsdDir = path.resolve(__dirname, '../xsd');
+	const schemaPath = path.resolve(xsdDir, 'ebics_H004.xsd');
+	const schemaDoc = fs.readFileSync(schemaPath, { encoding: 'utf8' });
+	const preload = fs
+		.readdirSync(xsdDir)
+		.filter(file => file.endsWith('.xsd') && file !== 'ebics_H004.xsd')
+		.map(file => ({
+			fileName: file,
+			contents: fs.readFileSync(path.join(xsdDir, file), {
+				encoding: 'utf8',
+			}),
+		}));
 
-const schemaDir = path.dirname(schemaPath);
-const cwd = process.cwd();
-
-const validateXML = (str) => {
-	try {
-		process.chdir(schemaDir);
-		const isValid = libxml.parseXml(str).validate(schemaDoc);
-		process.chdir(cwd);
-		return isValid;
-	} catch (e) {
-		process.chdir(cwd);
-		return false;
-	}
-};
+	return async (str) => {
+		const results = await xmlLintWasm.validateXML({
+			xml: { fileName: 'ebics.xml', contents: str },
+			schema: [
+				{
+					fileName: 'ebics_H004.xsd',
+					contents: schemaDoc,
+				},
+			],
+			preload,
+		});
+		return results.valid;
+	};
+})();
 
 const client = new ebics.Client({
 	url: 'https://iso20022test.credit-suisse.com/ebicsweb/ebicsweb',
@@ -103,7 +112,7 @@ describe('H004 order generation', () => {
 
 		it(`[${operation}] ${type} order generation`, async () => {
 			const signedOrder = await client.signOrder(order);
-			assert.isTrue(validateXML(signedOrder));
+			assert.isTrue(await validateXML(signedOrder));
 		});
 	}
 });

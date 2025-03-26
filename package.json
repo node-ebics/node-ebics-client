@@ -79,8 +79,8 @@
 		"eslint": "^6.7.2",
 		"eslint-config-ecollect-base": "^0.1.2",
 		"eslint-plugin-import": "^2.28.1",
-		"libxmljs": "^1.0.10",
 		"mocha": "^10.2.0",
-		"nyc": "^15.1.0"
+		"nyc": "^15.1.0",
+		"xmllint-wasm": "^4.0.2"
 	}
 }

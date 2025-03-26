@@ -10,6 +10,7 @@ module.exports = ({
 	userId,
 	hostId,
 	passphrase,
+	iv,
 	keyStoragePath,
 } = loadConfig()) => new Client({
 	url,
@@ -17,5 +18,6 @@ module.exports = ({
 	userId,
 	hostId,
 	passphrase,
+	iv,
 	keyStorage: fsKeysStorage(keyStoragePath),
 });

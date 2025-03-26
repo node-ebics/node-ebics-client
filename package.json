@@ -9,7 +9,10 @@
 	],
 	"scripts": {
 		"lint": "eslint .",
-		"test": "nyc node --security-revert=CVE-2023-46809 ./node_modules/.bin/mocha test/**/*.js",
+		"test": "npm run test:node$(node -v | cut -d '.' -f 1 | cut -c 2-)",
+		"test:node22": "nyc node ./node_modules/.bin/mocha test/**/*.js",
+		"test:node20": "nyc node --security-revert=CVE-2023-46809 ./node_modules/.bin/mocha test/**/*.js",
+		"test:node18": "nyc node --security-revert=CVE-2023-46809 ./node_modules/.bin/mocha test/**/*.js",
 		"coverage": "nyc report --reporter=text-lcov | coveralls",
 		"version": "auto-changelog -p -t changelog-template.hbs && git add CHANGELOG.md"
 	},
